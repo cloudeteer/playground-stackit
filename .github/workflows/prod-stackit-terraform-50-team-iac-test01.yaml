@@ -14,7 +14,7 @@ on:
         type: string
   pull_request:
     paths:
-      - prod-stackit/terraform/team-iac-test01/**
+      - prod-stackit/terraform/50_projects/team-iac-test01/**
       - .github/workflows/prod-stackit-terraform-team-iac-test01.yaml
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
     name: Terraform
     uses: cloudeteer/iac-deployment-framework/.github/workflows/terraform-deploy-stackit.yaml@wip/stackit
     with:
-      directory: prod-stackit/terraform/team-iac-test01
+      directory: prod-stackit/terraform/50_projects/team-iac-test01
       terraform-force-unlock-id: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock-id }}
       terraform-force-unlock: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock }}
     secrets:
