@@ -46,17 +46,6 @@ provider "stackit" {
   private_key = var.private_key
 }
 
-
-data "stackit_resourcemanager_project" "team_iac_test01" {
-  project_id   = "341539db-8c67-43cf-ba1f-fd14157a0a5b"
-  container_id = "team-iac-test01"
-}
-
-output "project_name" {
-  value = data.stackit_resourcemanager_project.team_iac_test01.name
-}
-
-resource "stackit_network" "example" {
-  project_id = data.stackit_resourcemanager_project.team_iac_test01.project_id
-  name       = "example-network"
-}
+# These variables are mandatory and used on the provider configuration above.
+variable "service_account_key" {}
+variable "private_key" { default = null }
