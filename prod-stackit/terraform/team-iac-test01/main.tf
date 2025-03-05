@@ -24,7 +24,7 @@ terraform {
 }
 
 provider "stackit" {
-  region              = "eu01"
+  region = "eu01"
 
   # Note: There are no environment variables available for these parameters.
   # Instead, we use TF_VAR_service_account_key and TF_VAR_private_key.
@@ -39,4 +39,9 @@ data "stackit_resourcemanager_project" "team_iac_test01" {
 
 output "project_name" {
   value = data.stackit_resourcemanager_project.team_iac_test01.name
+}
+
+resource "stackit_network" "example_with_name" {
+  project_id = data.stackit_resourcemanager_project.team_iac_test01.project_id
+  name       = "example-network"
 }
