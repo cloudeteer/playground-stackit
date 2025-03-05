@@ -45,3 +45,7 @@ provider "stackit" {
   # It takes precedence over the private key that is included in the service account key.
   private_key = var.private_key
 }
+
+# These variables are mandatory and used on the provider configuration above.
+variable "service_account_key" {}
+variable "private_key" { default = null }
