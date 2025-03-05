@@ -6,31 +6,46 @@ terraform {
     }
   }
 
+  # Terraform Remote State Backend Configuration
+  # https://developer.hashicorp.com/terraform/language/backend/s3#configuration
   backend "s3" {
-    bucket = "team-iac-test01-tfstate"
-    key    = "terraform.tfstate"
+    bucket = "launchpad"
+    region = "eu01"
+    key    = "prod-stackid/terraform/10_launchpad/terraform.tfstate"
+
     endpoints = {
       s3 = "https://object.storage.eu01.onstackit.cloud"
     }
-    region                      = "eu01"
+
+    # AWS specific checks must be skipped as they do not work on STACKIT
     skip_credentials_validation = true
     skip_region_validation      = true
-    skip_s3_checksum            = true
     skip_requesting_account_id  = true
+    skip_s3_checksum            = true
 
-    # secret_key = null  # Set by ENV AWS_SECRET_ACCESS_KEY
-    # access_key = null  # Set by ENV AWS_ACCESS_KEY_ID
+    # Credentials supplied by environment variables
+    # access_key = null # AWS_ACCESS_KEY_ID
+    # secret_key = null # AWS_SECRET_ACCESS_KEY
   }
 }
 
 provider "stackit" {
+
+  # Region will be used as the default location for regional services.
+  # Not all services require a region, some are global
   region = "eu01"
 
-  # Note: There are no environment variables available for these parameters.
-  # Instead, we use TF_VAR_service_account_key and TF_VAR_private_key.
+  # NOTE: There are no environment variables available for the parameters service_account_key and private_key.
+  # Alternatively, we use TF_VAR_service_account_key and TF_VAR_private_key.
+
+  # Service account key used for authentication
   service_account_key = var.service_account_key
-  private_key         = var.private_key
+
+  # Private RSA key used for authentication, relevant for the key flow.
+  # It takes precedence over the private key that is included in the service account key.
+  private_key = var.private_key
 }
+
 
 data "stackit_resourcemanager_project" "team_iac_test01" {
   project_id   = "341539db-8c67-43cf-ba1f-fd14157a0a5b"
@@ -41,7 +56,7 @@ output "project_name" {
   value = data.stackit_resourcemanager_project.team_iac_test01.name
 }
 
-resource "stackit_network" "example_with_name" {
+resource "stackit_network" "example" {
   project_id = data.stackit_resourcemanager_project.team_iac_test01.project_id
   name       = "example-network"
 }
