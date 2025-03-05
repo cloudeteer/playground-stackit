@@ -1,4 +1,4 @@
-# playground-oe-stackit
+# playground-stackit
 
 [![STACKIT Confluence Shield]][STACKIT Confluence Space]
 
