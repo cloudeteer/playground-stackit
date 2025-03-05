@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket = "launchpad"
     region = "eu01"
-    key    = "prod-stackid/terraform/10_launchpad/terraform.tfstate"
+    key    = "prod-stackit/terraform/50_projects/team-iac-test01/terraform.tfstate"
 
     endpoints = {
       s3 = "https://object.storage.eu01.onstackit.cloud"
