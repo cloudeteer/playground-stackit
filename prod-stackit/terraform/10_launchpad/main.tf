@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket = "launchpad"
     region = "eu01"
-    key    = "prod-stackid/terraform/10_launchpad/terraform.tfstate"
+    key    = "prod-stackit/terraform/10_launchpad/terraform.tfstate"
 
     endpoints = {
       s3 = "https://object.storage.eu01.onstackit.cloud"
@@ -45,3 +45,7 @@ provider "stackit" {
   # It takes precedence over the private key that is included in the service account key.
   private_key = var.private_key
 }
+
+# These variables are mandatory and used on the provider configuration above.
+variable "service_account_key" {}
+variable "private_key" { default = null }
