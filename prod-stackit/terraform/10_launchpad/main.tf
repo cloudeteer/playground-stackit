@@ -44,6 +44,9 @@ provider "stackit" {
   # Private RSA key used for authentication, relevant for the key flow.
   # It takes precedence over the private key that is included in the service account key.
   private_key = var.private_key
+
+  # Enable beta resources.
+  enable_beta_resources = true
 }
 
 # These variables are mandatory and used on the provider configuration above.
