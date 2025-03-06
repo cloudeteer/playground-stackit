@@ -1,22 +1,26 @@
 resource "stackit_server" "launchpad" {
   project_id = data.stackit_resourcemanager_project.this.project_id
   name       = "launchpad"
+
   boot_volume = {
     size        = 64
     source_type = "image"
 
     # stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images |
     #   jq '.items[] | select(.name=="Ubuntu 24.04 ARM64")'
-    # source_id = "882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9" # Ubuntu 24.04 ARM64
+    source_id = "882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9" # Ubuntu 24.04 ARM64
 
     # stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images |
     #   jq '.items[] | select(.name=="Ubuntu 22.04")'
-    source_id = "117e8764-41c2-405f-aece-b53aa08b28cc" # Ubuntu 24.04
+    # source_id = "117e8764-41c2-405f-aece-b53aa08b28cc" # Ubuntu 24.04
   }
-  # machine_type = "g1r.1d"
-  machine_type = "g1.1"
-  keypair_name = stackit_key_pair.launchpad.name
-  user_data    = cloudinit_config.launchpad.rendered
+
+  machine_type = "g1r.1d" # ARM
+  # machine_type = "g1.1" # X86
+
+  availability_zone = "eu01-1" # eu01-1, eu01-2, eu03-3, eu01-m (Metro Zone is not available for ARM machine types)
+  keypair_name      = stackit_key_pair.launchpad.name
+  user_data         = cloudinit_config.launchpad.rendered
 }
 
 resource "tls_private_key" "launchpad" {
@@ -38,6 +42,7 @@ resource "cloudinit_config" "launchpad" {
 
     content = templatefile("${path.module}/assets/install_github_actions_runner.sh.tftpl", {
       runner_token = var.runner_token
+      runner_arch  = "arm64"
     })
   }
 }

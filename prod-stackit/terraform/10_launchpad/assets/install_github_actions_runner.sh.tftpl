@@ -5,6 +5,7 @@ set -o pipefail
 RUNNER_ORG=cloudeteer
 RUNNER_REPO=playground-stackit
 RUNNER_TOKEN=${runner_token} # Terraform Template Value
+RUNNER_ARCH=${runner_arch}   # Terraform Template Value
 RUNNER_LABELS=self-hosted
 # update this to the latest version
 RUNNER_VERSION=2.322.0
@@ -36,7 +37,7 @@ usermod -G docker runner
 cd /home/runner
 mkdir -p actions-runner
 cd actions-runner
-curl -o actions-runner-linux-x64-$RUNNER_VERSION.tar.gz -L https://github.com/actions/runner/releases/download/v$RUNNER_VERSION/actions-runner-linux-x64-$RUNNER_VERSION.tar.gz
+curl -o actions-runner-linux-x64-$RUNNER_VERSION.tar.gz -L https://github.com/actions/runner/releases/download/v$RUNNER_VERSION/actions-runner-linux-$RUNNER_ARCH-$RUNNER_VERSION.tar.gz
 tar xzf ./actions-runner-linux-x64-$RUNNER_VERSION.tar.gz
 
 # Configure runner
