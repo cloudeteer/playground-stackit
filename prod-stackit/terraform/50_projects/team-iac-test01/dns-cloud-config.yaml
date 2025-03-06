@@ -1,0 +1,54 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+
+packages:
+  - unbound
+
+write_files:
+  - path: /etc/systemd/resolved.conf.d/unbound.conf
+    content: |
+      [Resolve]
+      DNS=127.0.0.1
+      DNSSEC=yes
+      DNSStubListener=no
+
+  - path: /etc/unbound/unbound.conf
+    content: |
+      server:
+        verbosity: 1
+        interface: 0.0.0.0
+        access-control: 0.0.0.0/0 allow
+        cache-min-ttl: 3600
+        cache-max-ttl: 86400
+        prefetch: yes
+        num-threads: 1
+        msg-cache-size: 8m
+        rrset-cache-size: 16m
+        infra-cache-numhosts: 1000
+        key-cache-size: 4m
+        do-ip6: no
+        do-daemonize: no
+        harden-glue: yes
+        harden-dnssec-stripped: yes
+        use-caps-for-id: yes
+        edns-buffer-size: 1232
+        minimal-responses: yes
+        qname-minimisation: yes
+        root-hints: "/etc/unbound/root.hints"
+
+runcmd:
+  # StackIT Agent
+  - curl http://169.254.169.254/stackit/v1/server-agent/amd64/deb -o /tmp/stackit-server-agent.deb
+  - dpkg -i /tmp/stackit-server-agent.deb
+  - rm -rf /tmp/stackit-server-agent.deb
+  - systemctl status stackit-server-agent.service --no-pager
+
+  # Unbound
+  - curl -o /etc/unbound/root.hints https://www.internic.net/domain/named.root
+  - systemctl restart systemd-resolved
+  - systemctl status systemd-resolved --no-pager
+  - sleep 5
+  - systemctl disable --now unbound-resolvconf.service
+  - systemctl restart unbound
+  - systemctl status unbound --no-pager
