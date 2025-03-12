@@ -30,10 +30,10 @@ resource "stackit_server" "dns" {
   name = "dns"
 
   boot_volume = {
-    size        = 64
-    source_type = "image"
-    source_id   = "117e8764-41c2-405f-aece-b53aa08b28cc" # Ubuntu 24.04
-    # performance_class = " storage_premium_perf0"
+    size                  = 64
+    source_type           = "image"
+    source_id             = "117e8764-41c2-405f-aece-b53aa08b28cc" # Ubuntu 24.04
+    delete_on_termination = true
   }
 
   machine_type      = "c1.1"

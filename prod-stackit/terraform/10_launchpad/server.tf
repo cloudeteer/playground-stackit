@@ -3,8 +3,9 @@ resource "stackit_server" "launchpad" {
   name       = "launchpad"
 
   boot_volume = {
-    size        = 64
-    source_type = "image"
+    size                  = 64
+    source_type           = "image"
+    delete_on_termination = true
 
     # stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images |
     #   jq '.items[] | select(.name=="Ubuntu 24.04 ARM64")'
