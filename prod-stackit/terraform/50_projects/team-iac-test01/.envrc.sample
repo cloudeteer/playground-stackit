@@ -21,9 +21,10 @@ export AWS_SECRET_ACCESS_KEY=
 # ------------------------------
 # The following environment variables are used to authenticate with the STACKIT API.
 # - Open https://portal.stackit.cloud/
-# - Open the "team-iac-test01" Project
-# - configure Credentials in Access > Sercice Accounts
-# - create Sercice Account Key for the Service Account
+# - Open the "launchpad" Project
+# - configure Credentials in Access > Service Accounts
+# - use the launchpad-z3sy221@sa.stackit.cloud Service Account
+# - create Service Account Key for the Service Account
 # - Paste json content to TF_VAR_service_account_key
 export TF_VAR_service_account_key=$(cat <<EOF
 {PASTE JSON HERE}
