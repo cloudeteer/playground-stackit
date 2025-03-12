@@ -27,7 +27,7 @@ resource "stackit_server" "firewall" {
   availability_zone = "eu01-1"
 
   boot_volume = {
-    size                  = 64
+    size                  = 8
     source_type           = "image"
     source_id             = openstack_images_image_v2.firewall.id # stackit_image.firewall.image_id
     delete_on_termination = true
