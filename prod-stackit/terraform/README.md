@@ -31,3 +31,18 @@ See <https://docs.stackit.cloud/stackit/en/regions-and-availability-zones-751372
 - `eu01-2`
 - `eu03-3`
 - `eu01-m` (Metro Zone is not available for ARM machine types)
+
+## Storage Performance classes
+
+See <https://docs.stackit.cloud/stackit/en/service-plans-blockstorage-75137974.html#ServiceplansBlockStorage-CurrentlyavailableServicePlans%28performanceclasses%29>
+
+| Performance class    | Name (Terraform)       | Max. IOPS | Max. Througput (MB/s) |
+| -------------------- | ---------------------- | --------- | --------------------- |
+| Performance class 0  | storage_premium_perf0  | 120       | 25                    |
+| Performance class 1  | storage_premium_perf1  | 500       | 50                    |
+| Performance class 2  | storage_premium_perf2  | 1000      | 100                   |
+| Performance class 4  | storage_premium_perf4  | 2000      | 150                   |
+| Performance class 6  | storage_premium_perf6  | 5000      | 200                   |
+| Performance class 8  | storage_premium_perf8  | 10000     | 250                   |
+| Performance class 10 | storage_premium_perf10 | 15000     | 300                   |
+| Performance class 12 | storage_premium_perf12 | 20000     | 350                   |
