@@ -1,5 +1,9 @@
 terraform {
   required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+      version = "~> 3.0"
+    }
     stackit = {
       source  = "stackitcloud/stackit"
       version = "~> 0.43"
@@ -29,6 +33,20 @@ terraform {
   }
 }
 
+# https://registry.terraform.io/providers/terraform-provider-openstack/openstack
+provider "openstack" {
+  auth_url          = "https://keystone.api.iaas.eu01.stackit.cloud/v3/"
+  project_domain_id = "portal_mvp"
+  region            = "RegionOne"
+  user_domain_name  = "portal_mvp"
+
+  # Credentials supplied by environment variables
+  # password  = null # OS_PASSWORD
+  # tenant_id = null # OS_TENANT_ID
+  # username  = null # OS_USERNAME
+}
+
+# https://registry.terraform.io/providers/stackitcloud/stackit
 provider "stackit" {
 
   # Region will be used as the default location for regional services.
