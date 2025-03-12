@@ -33,3 +33,7 @@ jobs:
       stackit_service_account_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_SERVICE_ACCOUNT_KEY }}
       backend_s3_secret_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_BACKEND_SECRET_ACCESS_KEY }}
       backend_s3_access_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_BACKEND_ACCESS_KEY }}
+      env: |-
+        TF_VAR_PASSWORD: ${{ secrets.CDT_STACKIT_OPENSTACK_UAT_TOKEN_PASSWORD_prj_vpn_fw_test_firewall }}
+        TF_VAR_TENANTID: ${{ secrets.CDT_STACKIT_OPENSTACK_PROJECT_ID_prj_vpn_fw_test_firewall }}
+        TF_VAR_USERNAME: ${{ secrets.CDT_STACKIT_OPENSTACK_UAT_TOKEN_NAME_prj_vpn_fw_test_firewall }}
