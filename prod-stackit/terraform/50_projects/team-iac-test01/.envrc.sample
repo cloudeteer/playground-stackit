@@ -1,0 +1,31 @@
+# Local Dev Environment Variables
+# ------------------------------
+# This file is used to set environment variables for local development.
+# It is not used in the CI/CD pipeline.
+# Copy this file to .envrc and update the values as needed.
+# Run `direnv allow` to apply the changes.
+# ------------------------------
+
+# Terraform State Configuration
+# ------------------------------
+# The following environment variables are used to configure the Terraform state.
+# - Open https://portal.stackit.cloud/
+# - Open the "launchpad" Project
+# - configure Credentials in Computing > Object Storage
+# - Use STACKIT Access key ID and Secret access key
+#   as AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
+
+# STACKIT Authentication
+# ------------------------------
+# The following environment variables are used to authenticate with the STACKIT API.
+# - Open https://portal.stackit.cloud/
+# - Open the "team-iac-test01" Project
+# - configure Credentials in Access > Sercice Accounts
+# - create Sercice Account Key for the Service Account
+# - Paste json content to TF_VAR_service_account_key
+export TF_VAR_service_account_key=$(cat <<EOF
+{PASTE JSON HERE}
+EOF
+)
