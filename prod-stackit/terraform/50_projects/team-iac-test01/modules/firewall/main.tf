@@ -1,10 +1,13 @@
 resource "openstack_images_image_v2" "this" {
-  name             = "pfsense-ce-2.7.2-amd64-10-12-2024"
+  name = "pfsense-ce-2.7.2-amd64-10-12-2024"
+
   image_source_url = "https://pfsense.object.storage.eu01.onstackit.cloud/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
-  web_download     = true
+  image_cache_path = "${path.root}/.terraform/image_cache"
+
   container_format = "bare"
   disk_format      = "qcow2"
   visibility       = "shared"
+  web_download     = true
 }
 
 # resource "stackit_image" "this" { ## !! DOES NOT WORK
