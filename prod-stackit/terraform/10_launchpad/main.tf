@@ -1,62 +1,86 @@
-terraform {
-  required_providers {
-    stackit = {
-      source  = "stackitcloud/stackit"
-      version = "~> 0.43"
-    }
+resource "stackit_server" "launchpad" {
+  project_id = data.stackit_resourcemanager_project.this.project_id
+  name       = "launchpad"
+
+  boot_volume = {
+    size                  = 64
+    source_type           = "image"
+    delete_on_termination = true
+
+    # stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images |
+    #   jq '.items[] | select(.name=="Ubuntu 24.04 ARM64")'
+    source_id = "882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9" # Ubuntu 24.04 ARM64
+
+    # stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images |
+    #   jq '.items[] | select(.name=="Ubuntu 22.04")'
+    # source_id = "117e8764-41c2-405f-aece-b53aa08b28cc" # Ubuntu 24.04
   }
 
-  # Terraform Remote State Backend Configuration
-  # https://developer.hashicorp.com/terraform/language/backend/s3#configuration
-  backend "s3" {
-    bucket = "launchpad"
-    region = "eu01"
-    key    = "prod-stackit/terraform/10_launchpad/terraform.tfstate"
+  machine_type = "g1r.1d" # ARM
+  # machine_type = "g1.1" # X86
 
-    endpoints = {
-      s3 = "https://object.storage.eu01.onstackit.cloud"
-    }
+  availability_zone = "eu01-1" # eu01-1, eu01-2, eu03-3, eu01-m (Metro Zone is not available for ARM machine types)
+  keypair_name      = stackit_key_pair.launchpad.name
+  user_data         = cloudinit_config.launchpad.rendered
+}
 
-    # AWS specific checks must be skipped as they do not work on STACKIT
-    skip_credentials_validation = true
-    skip_region_validation      = true
-    skip_requesting_account_id  = true
-    skip_s3_checksum            = true
+resource "tls_private_key" "launchpad" {
+  algorithm = "ED25519"
+}
 
-    # Credentials supplied by environment variables
-    # access_key = null # AWS_ACCESS_KEY_ID
-    # secret_key = null # AWS_SECRET_ACCESS_KEY
+resource "stackit_key_pair" "launchpad" {
+  name       = "launchpad"
+  public_key = chomp(tls_private_key.launchpad.public_key_openssh)
+}
+
+resource "cloudinit_config" "launchpad" {
+  gzip          = false
+  base64_encode = false
+
+  part {
+    filename     = "install_github_runner.sh"
+    content_type = "text/x-shellscript"
+
+    content = templatefile("${path.module}/assets/install_github_actions_runner.sh.tftpl", {
+      runner_token = var.runner_token
+      runner_arch  = "arm64"
+    })
   }
 }
 
-provider "stackit" {
-
-  # Region will be used as the default location for regional services.
-  # Not all services require a region, some are global
-  region = "eu01"
-
-  # NOTE: There are no environment variables available for the parameters stackit_service_account_key and private_key.
-  # Alternatively, we use TF_VAR_stackit_service_account_key and TF_VAR_stackit_service_account_private_key.
-
-  # Service account key used for authentication
-  service_account_key = var.stackit_service_account_key
-
-  # Private RSA key used for authentication, relevant for the key flow.
-  # It takes precedence over the private key that is included in the service account key.
-  private_key = var.stackit_service_account_private_key
-
-  # Enable beta resources.
-  enable_beta_resources = true
+resource "stackit_network" "launchpad" {
+  project_id         = data.stackit_resourcemanager_project.this.project_id
+  name               = "launchpad"
+  ipv4_nameservers   = ["1.1.1.1", "8.8.8.8", "9.9.9.9"]
+  ipv4_prefix_length = 24
 }
 
-# These variables are mandatory and used on the provider configuration above.
-variable "stackit_service_account_key" {
-  type      = string
-  sensitive = true
+resource "stackit_security_group" "launchpad" {
+  project_id = data.stackit_resourcemanager_project.this.project_id
+  name       = "launchpad"
+  stateful   = true
 }
 
-variable "stackit_service_account_private_key" {
-  type      = string
-  default   = null
-  sensitive = true
+resource "stackit_security_group_rule" "launchpad" {
+  project_id        = data.stackit_resourcemanager_project.this.project_id
+  security_group_id = stackit_security_group.launchpad.security_group_id
+  direction         = "ingress"
+  ether_type        = "IPv4"
+}
+
+resource "stackit_network_interface" "launchpad" {
+  project_id         = data.stackit_resourcemanager_project.this.project_id
+  network_id         = stackit_network.launchpad.network_id
+  security_group_ids = [stackit_security_group.launchpad.security_group_id]
+}
+
+resource "stackit_public_ip" "launchpad" {
+  project_id           = data.stackit_resourcemanager_project.this.project_id
+  network_interface_id = stackit_network_interface.launchpad.network_interface_id
+}
+
+resource "stackit_server_network_interface_attach" "launchpad" {
+  project_id           = data.stackit_resourcemanager_project.this.project_id
+  server_id            = stackit_server.launchpad.server_id
+  network_interface_id = stackit_network_interface.launchpad.network_interface_id
 }
