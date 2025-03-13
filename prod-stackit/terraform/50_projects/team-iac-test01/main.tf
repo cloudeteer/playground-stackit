@@ -1,8 +1,11 @@
 #
 # DNS
 #
+
 module "dns" {
   source = "./modules/dns"
+
+  count = var.features.dns ? 1 : 0
 
   labels       = local.labels
   project_id   = data.stackit_resourcemanager_project.this.project_id
@@ -12,25 +15,28 @@ module "dns" {
 }
 
 #
-# FIREWALL
-#
-
-module "firewall" {
-  source = "./modules/firewall"
-
-  ipv4_nameservers = module.dns.ipv4_nameservers
-  labels           = local.labels
-  project_id       = data.stackit_resourcemanager_project.this.project_id
-}
-
-
-#
 # SECURITY GROUP WITHOUT DEFAULT RULES
 #
 
 module "empty_security_group" {
   source = "./modules/empty_security_group"
 
+  count = var.features.empty_security_group ? 1 : 0
+
   labels     = local.labels
   project_id = data.stackit_resourcemanager_project.this.project_id
+}
+
+#
+# FIREWALL
+#
+
+module "firewall" {
+  source = "./modules/firewall"
+
+  count = var.features.firewall ? 1 : 0
+
+  ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
+  labels           = local.labels
+  project_id       = data.stackit_resourcemanager_project.this.project_id
 }

@@ -8,3 +8,11 @@ variable "stackit_service_account_private_key" {
   default   = null
   sensitive = true
 }
+
+variable "features" {
+  type = object({
+    dns                  = optional(bool, false)
+    empty_security_group = optional(bool, false)
+    firewall             = optional(bool, false)
+  })
+}

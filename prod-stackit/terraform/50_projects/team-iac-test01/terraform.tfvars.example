@@ -1,0 +1,5 @@
+features = {
+  dns                  = true
+  empty_security_group = false
+  firewall             = false
+}
