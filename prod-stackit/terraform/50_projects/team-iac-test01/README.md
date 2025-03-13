@@ -10,3 +10,12 @@ To get started, follow these steps:
 
 > [!NOTE]
 > Your personal `terraform.tfvars` file will not be tracked by Git.
+
+## SSH Access
+
+This deployment generates an SSH private key and saves it to a local file named `./id_ed25519`. To connect to a server deployed by this setup, use the following command:
+
+```shell
+# Replace <USERNAME> and <HOST> with the appropriate values
+ssh -i ./id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no <USERNAME>@<HOST>
+```
