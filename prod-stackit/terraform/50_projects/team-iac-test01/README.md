@@ -11,7 +11,7 @@ To get started, follow these steps:
 5. Run `terraform apply`.
 
 > [!NOTE]
-> Your personal `terraform.tfvars` file will not be tracked by Git.
+> Your personal `.envrc` and `terraform.tfvars` files will not be tracked by Git.
 
 ## SSH Access
 
