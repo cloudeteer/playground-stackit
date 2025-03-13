@@ -1,0 +1,35 @@
+resource "stackit_security_group" "this" {
+  project_id = var.project_id
+  name       = "empty-security-group"
+  labels     = var.labels
+}
+
+resource "null_resource" "delete_security_group_rules" {
+  triggers = {
+    security_group_id = stackit_security_group.this.security_group_id
+  }
+
+  provisioner "local-exec" {
+    interpreter = ["bash", "-ec"]
+
+    command = join("; ", [
+      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > ${path.cwd}/key.json",
+      "stackit auth activate-service-account --service-account-key-path ${path.cwd}/key.json",
+      "rm ${path.cwd}/key.json",
+      join(" | ", [
+        format(
+          "stackit curl https://iaas.api.eu01.stackit.cloud/v1/projects/%s/security-groups/%s/rules",
+          var.project_id,
+          stackit_security_group.this.security_group_id
+        ),
+        "jq -r '.items[].id'",
+        format(
+          "xargs -L 1 -I %% stackit curl -X DELETE https://iaas.api.eu01.stackit.cloud/v1/projects/%s/security-groups/%s/rules/%%",
+          var.project_id,
+          stackit_security_group.this.security_group_id
+        )
+      ]),
+      "stackit auth logout",
+    ])
+  }
+}
