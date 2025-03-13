@@ -2,4 +2,5 @@ features = {
   dns                  = true
   empty_security_group = false
   firewall             = false
+  load_balancer        = false
 }

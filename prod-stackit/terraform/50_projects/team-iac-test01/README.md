@@ -4,9 +4,11 @@
 
 To get started, follow these steps:
 
-1. Copy the `terraform.tfvars.example` file to `terraform.tfvars`.
-2. Customize the `terraform.tfvars` file to enable or disable the features you want to deploy.
-3. Run `terraform apply`.
+1. Copy the `.envrc.sample` file to `.envrc`.
+2. Customize the `.envrc` file and set up the mandatory environment variables. Use the `source .envrc` command to load the environment variables. Alternatively, you can use [direnv](https://direnv.net/) to automatically load the environment variables.
+3. Copy the `terraform.tfvars.sample` file to `terraform.tfvars`:
+4. Customize the `terraform.tfvars` file to enable or disable the features you want to deploy.
+5. Run `terraform apply`.
 
 > [!NOTE]
 > Your personal `terraform.tfvars` file will not be tracked by Git.
@@ -26,6 +28,6 @@ To add a new feature (StackIT Resource Test), follow these steps:
 
 1. Create a directory in `./modules` for the new feature.
 2. Add the new feature to `main.tf`.
-3. Update the `features` variable in `variables.tf` and `terraform.tfvars.example`.
+3. Update the `features` variable in `variables.tf` and `terraform.tfvars.sample`.
 
 Refer to the existing features for examples. This approach allows independent testing of StackIT features without conflicts.
