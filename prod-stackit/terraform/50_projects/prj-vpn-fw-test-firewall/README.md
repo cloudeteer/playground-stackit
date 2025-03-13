@@ -14,7 +14,7 @@ The Terraform backend for this project is hosted in the [launchpad StackIT proje
 
 ### StackIT Authentication
 
-We use StackIT's Key Flow authentication instead of the access token method provided by this Terraform code. The variables `service_account_key` (mandatory) and `private_key` (optional) are defined in `cloudeteer_addons.tf`. The variable `STACKIT_SERVICE_ACCOUNT_TOKEN` is not used, as a default value of `null` is set in the `cloudeteer_override.tf` file.
+We use StackIT's Key Flow authentication instead of the access token method provided by this Terraform code. The variables `stackit_service_account_key` (mandatory) and `stackit_service_account_private_key` (optional) are defined in `cloudeteer_addons.tf`. The variable `STACKIT_SERVICE_ACCOUNT_TOKEN` is not used, as a default value of `null` is set in the `cloudeteer_override.tf` file.
 
 ### StackIT Project
 

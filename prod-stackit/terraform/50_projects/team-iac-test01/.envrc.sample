@@ -25,8 +25,8 @@ export AWS_SECRET_ACCESS_KEY=
 # - configure Credentials in Access > Service Accounts
 # - use the launchpad-z3sy221@sa.stackit.cloud Service Account
 # - create Service Account Key for the Service Account
-# - Paste json content to TF_VAR_service_account_key
-export TF_VAR_service_account_key=$(cat <<EOF
+# - Paste json content to TF_VAR_stackit_service_account_key
+export TF_VAR_stackit_service_account_key=$(cat <<EOF
 {PASTE JSON HERE}
 EOF
 )

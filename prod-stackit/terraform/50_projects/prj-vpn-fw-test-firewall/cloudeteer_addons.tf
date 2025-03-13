@@ -4,5 +4,13 @@ data "stackit_resourcemanager_project" "this" {
 }
 
 # These variables are mandatory and used on the provider configuration above.
-variable "service_account_key" {}
-variable "private_key" { default = null }
+variable "stackit_service_account_key" {
+  type      = string
+  sensitive = true
+}
+
+variable "stackit_service_account_private_key" {
+  type      = string
+  default   = null
+  sensitive = true
+}
