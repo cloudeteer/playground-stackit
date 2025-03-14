@@ -16,7 +16,7 @@ terraform {
     }
     local = {
       source  = "hashicorp/local"
-      version = "~> 4.0"
+      version = "~> 2.5"
     }
   }
 
