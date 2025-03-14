@@ -30,7 +30,7 @@ Follow these steps to generate a Personal Access Token and use it with StackIT's
 
 3. That's it! Now you can use `terraform` with the StackIT provider.
 
-> [!TIP]
+> [!CAUTION]
 > This authentication is only needed for authentication against the StackIT API to create resources with the StackIT Terraform provider. If the Terraform State file is located remotely on a StackIT Object Store, backend authentication needs to be done separately, because the StackIT Object Store credentials and permissions system are separate from the StackIT API permission system. You need access to the StackIT Object Store by providing an access key and a secret key.
 
 ## Well Known Server Images
