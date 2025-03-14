@@ -1,3 +1,10 @@
+resource "stackit_affinity_group" "backend" {
+  project_id = var.project_id
+
+  name   = "backend"
+  policy = "soft-affinity"
+}
+
 resource "stackit_server" "backend" {
   count = var.backend_server_count
 
@@ -5,6 +12,8 @@ resource "stackit_server" "backend" {
   labels     = var.labels
 
   name = "app${count.index}"
+
+  affinity_group = stackit_affinity_group.backend.affinity_group_id
 
   boot_volume = {
     size                  = 25
