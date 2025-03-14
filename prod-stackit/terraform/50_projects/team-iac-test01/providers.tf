@@ -16,7 +16,7 @@ provider "stackit" {
 
   # Region will be used as the default location for regional services.
   # Not all services require a region, some are global
-  region = "eu01"
+  default_region = "eu01"
 
   # NOTE: There are no environment variables available for the parameters service_account_key and private_key.
   # Alternatively, we use TF_VAR_stackit_service_account_key and TF_VAR_stackit_service_account_private_key.
