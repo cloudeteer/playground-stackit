@@ -12,10 +12,13 @@ Each subdirectory within `./50_projects` corresponds to a specific StackIT proje
 
 ## Well Known Server Images
 
-| Name               | ID                                     |
-| ------------------ | -------------------------------------- |
-| Ubuntu 24.04       | `117e8764-41c2-405f-aece-b53aa08b28cc` |
-| Ubuntu 24.04 ARM64 | `882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9` |
+| Name                         | ID                                     |
+| ---------------------------- | -------------------------------------- |
+| Debian 12                    | `a1413b23-b529-45a3-8323-44b7b91b1828` |
+| Debian 12 ARM64              | `d98c436c-ff52-4e81-9353-cdd73598d415` |
+| Ubuntu 24.04                 | `117e8764-41c2-405f-aece-b53aa08b28cc` |
+| Ubuntu 24.04 ARM64           | `882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9` |
+| Windows Server 2025 Standard | `02bd744c-16d6-4765-bb95-520e141c9296` |
 
 For all Images available use `stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images` or see [images.json](images.json)
 
