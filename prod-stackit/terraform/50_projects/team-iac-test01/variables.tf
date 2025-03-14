@@ -14,5 +14,6 @@ variable "features" {
     dns                  = optional(bool, false)
     empty_security_group = optional(bool, false)
     firewall             = optional(bool, false)
+    load_balancer        = optional(bool, false)
   })
 }

@@ -1,0 +1,15 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - podman
+
+runcmd:
+  # StackIT Agent
+  - curl http://169.254.169.254/stackit/v1/server-agent/amd64/deb -o /tmp/stackit-server-agent.deb
+  - dpkg -i /tmp/stackit-server-agent.deb
+  - rm -rf /tmp/stackit-server-agent.deb
+  - systemctl status stackit-server-agent.service --no-pager
+
+  # Podman
+  - podman run -d -p 80:80 -v /etc/hostname:/usr/share/nginx/html/index.html:ro docker.io/library/nginx

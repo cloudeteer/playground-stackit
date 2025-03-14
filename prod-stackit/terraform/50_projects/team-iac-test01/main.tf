@@ -40,3 +40,21 @@ module "firewall" {
   labels           = local.labels
   project_id       = data.stackit_resourcemanager_project.this.project_id
 }
+
+#
+# LOAD BALANCER
+#
+
+module "load_balancer" {
+  source = "./modules/load_balancer"
+
+  count = var.features.load_balancer ? 1 : 0
+
+  ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
+  keypair_name     = stackit_key_pair.default.name
+  labels           = local.labels
+  project_id       = data.stackit_resourcemanager_project.this.project_id
+
+  backend_server_count                   = 3
+  backend_server_update_schedule_enabled = false
+}
