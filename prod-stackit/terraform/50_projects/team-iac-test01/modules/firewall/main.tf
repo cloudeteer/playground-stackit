@@ -66,6 +66,7 @@ resource "stackit_network" "lan" {
 }
 
 resource "stackit_network_interface" "wan" {
+  name               = "wan"
   project_id         = var.project_id
   network_id         = stackit_network.wan.network_id
   security_group_ids = [stackit_security_group.wan.security_group_id]
@@ -73,6 +74,7 @@ resource "stackit_network_interface" "wan" {
 }
 
 resource "stackit_network_interface" "lan" {
+  name               = "lan"
   project_id         = var.project_id
   network_id         = stackit_network.lan.network_id
   security_group_ids = [stackit_security_group.lan.security_group_id]

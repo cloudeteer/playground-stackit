@@ -60,6 +60,7 @@ resource "stackit_network" "this" {
 }
 
 resource "stackit_network_interface" "this" {
+  name               = "nic"
   project_id         = var.project_id
   network_id         = stackit_network.this.network_id
   security_group_ids = [stackit_security_group.this.security_group_id]

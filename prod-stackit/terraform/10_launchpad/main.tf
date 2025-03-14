@@ -69,6 +69,7 @@ resource "stackit_security_group_rule" "launchpad" {
 }
 
 resource "stackit_network_interface" "launchpad" {
+  name               = "nic"
   project_id         = data.stackit_resourcemanager_project.this.project_id
   network_id         = stackit_network.launchpad.network_id
   security_group_ids = [stackit_security_group.launchpad.security_group_id]

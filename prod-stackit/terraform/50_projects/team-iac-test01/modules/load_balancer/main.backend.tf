@@ -55,6 +55,8 @@ resource "stackit_network_interface" "backend" {
   project_id = var.project_id
   labels     = var.labels
 
+  name = "nic"
+
   # network_id         = stackit_network.backend.network_id
   network_id         = stackit_network.shared.network_id
   security_group_ids = [stackit_security_group.backend.security_group_id]
