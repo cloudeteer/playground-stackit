@@ -56,5 +56,6 @@ module "load_balancer" {
   project_id       = data.stackit_resourcemanager_project.this.project_id
 
   backend_server_count                   = 3
+  backend_server_backup_schedule_enabled = false
   backend_server_update_schedule_enabled = false
 }

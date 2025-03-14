@@ -109,12 +109,32 @@ resource "stackit_security_group_rule" "backend" {
 }
 
 resource "time_sleep" "app_wait_5_minutes" {
-  count = var.backend_server_update_schedule_enabled ? var.backend_server_count : 0
+  count = (
+    var.backend_server_backup_schedule_enabled || var.backend_server_update_schedule_enabled ?
+    var.backend_server_count :
+    0
+  )
 
   create_duration = "5m"
 
   triggers = {
     server_id = stackit_server.backend[count.index].server_id
+  }
+}
+
+resource "stackit_server_backup_schedule" "example" {
+  count = var.backend_server_backup_schedule_enabled ? var.backend_server_count : 0
+
+  project_id = var.project_id
+  server_id  = time_sleep.app_wait_5_minutes[count.index].triggers["server_id"]
+
+  enabled = true
+  name    = "default"
+  rrule   = "DTSTART;TZID=Europe/Berlin:20200803T023000 RRULE:FREQ=DAILY;INTERVAL=1"
+
+  backup_properties = {
+    name             = "default"
+    retention_period = 3
   }
 }
 
