@@ -126,7 +126,7 @@ resource "stackit_server_backup_schedule" "backend" {
   count = var.backend_server_backup_schedule_enabled ? var.backend_server_count : 0
 
   project_id = var.project_id
-  server_id  = time_sleep.app_wait_5_minutes[count.index].triggers["server_id"]
+  server_id  = stackit_server.backend[count.index].server_id
 
   enabled = true
   name    = "default"
