@@ -122,7 +122,7 @@ resource "time_sleep" "app_wait_5_minutes" {
   }
 }
 
-resource "stackit_server_backup_schedule" "example" {
+resource "stackit_server_backup_schedule" "backend" {
   count = var.backend_server_backup_schedule_enabled ? var.backend_server_count : 0
 
   project_id = var.project_id
