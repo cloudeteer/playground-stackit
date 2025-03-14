@@ -1,3 +1,6 @@
+# Note: The stackit_image resource does not create a bootable image. Refer to StackIT support case SSD-6984 for more details.
+# Therefore, the OpenStack Terraform provider is used instead. However, please note that the OpenStack API at StackIT is deprecated.
+#
 resource "openstack_images_image_v2" "this" {
   name = "pfsense-ce-2.7.2-amd64-10-12-2024"
 
@@ -10,7 +13,7 @@ resource "openstack_images_image_v2" "this" {
   web_download     = true
 }
 
-# resource "stackit_image" "this" { ## !! DOES NOT WORK
+# resource "stackit_image" "this" { ## !! DOES NOT WORK // StackIT Support Case SSD-6984
 #   project_id = var.project_id
 #   labels     = merge(var.labels)
 
