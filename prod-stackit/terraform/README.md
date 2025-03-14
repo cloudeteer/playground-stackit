@@ -43,7 +43,12 @@ Follow these steps to generate a Personal Access Token and use it with StackIT's
 | Ubuntu 24.04 ARM64           | `882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9` |
 | Windows Server 2025 Standard | `02bd744c-16d6-4765-bb95-520e141c9296` |
 
-For all Images available use `stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images` or see [images.json](images.json)
+For all available images see [images.json](images.json), or use:
+
+```shell
+PROJECT_ID=00000000-0000-0000-0000-000000000000 # Set you project ID
+stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images
+```
 
 ## Server Types
 
