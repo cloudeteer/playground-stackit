@@ -8,8 +8,8 @@ module "dns" {
   count = var.features.dns ? 1 : 0
 
   labels       = local.labels
-  project_id   = data.stackit_resourcemanager_project.this.project_id
-  keypair_name = stackit_key_pair.default.name
+  project_id   = one(data.stackit_resourcemanager_project.this[*].project_id)
+  keypair_name = one(stackit_key_pair.default[*].name)
 
   debug = false
 }
@@ -24,7 +24,7 @@ module "empty_security_group" {
   count = var.features.empty_security_group ? 1 : 0
 
   labels     = local.labels
-  project_id = data.stackit_resourcemanager_project.this.project_id
+  project_id = one(data.stackit_resourcemanager_project.this[*].project_id)
 }
 
 #
@@ -38,7 +38,7 @@ module "firewall" {
 
   ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
   labels           = local.labels
-  project_id       = data.stackit_resourcemanager_project.this.project_id
+  project_id       = one(data.stackit_resourcemanager_project.this[*].project_id)
 }
 
 #
@@ -51,9 +51,9 @@ module "load_balancer" {
   count = var.features.load_balancer ? 1 : 0
 
   ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
-  keypair_name     = stackit_key_pair.default.name
+  keypair_name     = one(stackit_key_pair.default[*].name)
   labels           = local.labels
-  project_id       = data.stackit_resourcemanager_project.this.project_id
+  project_id       = one(data.stackit_resourcemanager_project.this[*].project_id)
 
   backend_server_count                   = 3
   backend_server_backup_schedule_enabled = false
