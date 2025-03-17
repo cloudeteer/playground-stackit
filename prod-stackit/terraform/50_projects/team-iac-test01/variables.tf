@@ -16,4 +16,6 @@ variable "features" {
     firewall             = optional(bool, false)
     load_balancer        = optional(bool, false)
   })
+
+  default = {}
 }
