@@ -1,0 +1,21 @@
+# Local Dev Environment Variables
+# ------------------------------
+# This file is used to set environment variables for local development.
+# It is not used in the CI/CD pipeline.
+# Copy this file to .envrc and update the values as needed.
+# Run `direnv allow` to apply the changes.
+# ------------------------------
+
+# STACKIT Authentication
+# ------------------------------
+# The following environment variables are used to authenticate with the STACKIT API.
+# - Open https://portal.stackit.cloud/
+# - Open the "launchpad" Project
+# - configure Credentials in Access > Service Accounts
+# - use the launchpad-z3sy221@sa.stackit.cloud Service Account
+# - create Service Account Key for the Service Account
+# - Paste json content to TF_VAR_stackit_service_account_key
+export TF_VAR_stackit_service_account_key=$(cat <<EOF
+{PASTE JSON HERE}
+EOF
+)
