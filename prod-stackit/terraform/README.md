@@ -8,30 +8,30 @@ This directory contains all the necessary files and configurations to run Terraf
 
 ### `./50_projects`
 
-Each subdirectory within `./50_projects` corresponds to a specific StackIT project. These subdirectories contain the complete deployment configurations for their respective projects.
+Each subdirectory within `./50_projects` corresponds to a specific STACKIT project. These subdirectories contain the complete deployment configurations for their respective projects.
 
 ## Terraform Provider Authentication
 
 ### Personal User
 
-You can authenticate against the StackIT API with your personal user using the StackIT Terraform Provider [Token Flow](https://registry.terraform.io/providers/stackitcloud/stackit/latest/docs#token-flow) authentication method.
+You can authenticate against the STACKIT API with your personal user using the STACKIT Terraform Provider [Token Flow](https://registry.terraform.io/providers/stackitcloud/stackit/latest/docs#token-flow) authentication method.
 
-Currently, it is not possible to create a Personal Access Token in the StackIT Portal. However, who needs a UI anyway, right? This documentation will focus on the [`stackit`](https://github.com/stackitcloud/stackit-cli/blob/main/INSTALLATION.md) CLI only.
+Currently, it is not possible to create a Personal Access Token in the STACKIT Portal. However, who needs a UI anyway, right? This documentation will focus on the [`stackit`](https://github.com/stackitcloud/stackit-cli/blob/main/INSTALLATION.md) CLI only.
 
-Follow these steps to generate a Personal Access Token and use it with StackIT's Terraform Provider:
+Follow these steps to generate a Personal Access Token and use it with STACKIT's Terraform Provider:
 
 1. Run `stackit auth login`.
 
-2. After successfully logging in, generate a short-lived personal access token and store it in the environment variable `STACKIT_SERVICE_ACCOUNT_TOKEN`. This token will be recognized by the StackIT Terraform provider.
+2. After successfully logging in, generate a short-lived personal access token and store it in the environment variable `STACKIT_SERVICE_ACCOUNT_TOKEN`. This token will be recognized by the STACKIT Terraform provider.
 
     ```shell
     export STACKIT_SERVICE_ACCOUNT_TOKEN=$(stackit auth get-access-token 2>/dev/stdout)
     ```
 
-3. That's it! Now you can use `terraform` with the StackIT provider.
+3. That's it! Now you can use `terraform` with the STACKIT provider.
 
 > [!CAUTION]
-> This authentication is only needed for authentication against the StackIT API to create resources with the StackIT Terraform provider. If the Terraform State file is located remotely on a StackIT Object Store, backend authentication needs to be done separately, because the StackIT Object Store credentials and permissions system are separate from the StackIT API permission system. You need access to the StackIT Object Store by providing an access key and a secret key.
+> This authentication is only needed for authentication against the STACKIT API to create resources with the STACKIT Terraform provider. If the Terraform State file is located remotely on a STACKIT Object Store, backend authentication needs to be done separately, because the STACKIT Object Store credentials and permissions system are separate from the STACKIT API permission system. You need access to the STACKIT Object Store by providing an access key and a secret key.
 
 ## Well Known Server Images
 

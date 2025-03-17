@@ -22,7 +22,7 @@ docker volume prune --force
 EOF
 chmod a+x /etc/cron.daily/docker-prune
 
-# Install StackIT CLI
+# Install STACKIT CLI
 curl https://packages.stackit.cloud/keys/key.gpg | gpg --yes --dearmor -o /usr/share/keyrings/stackit.gpg
 echo "deb [signed-by=/usr/share/keyrings/stackit.gpg] https://packages.stackit.cloud/apt/cli stackit main" |
   tee -a /etc/apt/sources.list.d/stackit.list

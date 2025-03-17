@@ -1,6 +1,6 @@
 # Test Import Objectstorage
 
-Given is this Terraform root module to test a simple import of the StackIT Object Storage.
+Given is this Terraform root module to test a simple import of the STACKIT Object Storage.
 
 When running terraform plan:
 

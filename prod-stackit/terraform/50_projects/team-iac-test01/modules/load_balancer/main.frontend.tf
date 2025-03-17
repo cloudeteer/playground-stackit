@@ -73,7 +73,7 @@ resource "stackit_loadbalancer" "frontend" {
 # }
 
 # Note: The network interface assigned to the load balancer is not managed by Terraform;
-# it is created transparently by the StackIT Cloud. This is not ideal because the stackit_public_ip.frontend
+# it is created transparently by the STACKIT Cloud. This is not ideal because the stackit_public_ip.frontend
 # resource will be modified outside of Terraform.
 #
 # resource "stackit_network_interface" "frontend" {
@@ -88,13 +88,13 @@ resource "stackit_public_ip" "frontend" {
   project_id = var.project_id
   labels     = var.labels
 
-  # Note: the network interface id of this public IP is managed by StackIT Cloud.
+  # Note: the network interface id of this public IP is managed by STACKIT Cloud.
   #
   # network_interface_id = stackit_network_interface.frontend.network_interface_id
 
   lifecycle {
     # Ignore changes to the network interface ID because this public IP
-    # will be assigned to a StackIT managed network interface
+    # will be assigned to a STACKIT managed network interface
     ignore_changes = [network_interface_id]
   }
 }

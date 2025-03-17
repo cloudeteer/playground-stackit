@@ -1,6 +1,6 @@
 # Launchpad
 
-This document details the initial setup process for the Launchpad on StackIT Cloud.
+This document details the initial setup process for the Launchpad on STACKIT Cloud.
 
 ## 1. Launchpad Service Account
 
@@ -25,7 +25,7 @@ To avoid missing crucial details in CLI output, we switched to json format:
 $ stackit config set --output-format json
 ```
 
-### Creating the StackIT Project
+### Creating the STACKIT Project
 
 The launchpad project was created under our organization:
 
@@ -169,4 +169,4 @@ $ unset temp
 - Object Storage provisioned for Terraform Remote State.
 - Credentials securely stored as GitHub secrets.
 
-Currently, a Launchpad Virtual Machine for a GitHub private runner is missing, but with StackIT, we may explore this possibility in the coming weeks. 🚀
+Currently, a Launchpad Virtual Machine for a GitHub private runner is missing, but with STACKIT, we may explore this possibility in the coming weeks. 🚀

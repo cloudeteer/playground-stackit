@@ -24,10 +24,10 @@ ssh -i ./id_ed25519 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no 
 
 ## Adding a Feature
 
-To add a new feature (StackIT Resource Test), follow these steps:
+To add a new feature (STACKIT Resource Test), follow these steps:
 
 1. Create a directory in `./modules` for the new feature.
 2. Add the new feature to `main.tf`.
 3. Update the `features` variable in `variables.tf` and `terraform.tfvars.sample`.
 
-Refer to the existing features for examples. This approach allows independent testing of StackIT features without conflicts.
+Refer to the existing features for examples. This approach allows independent testing of STACKIT features without conflicts.
