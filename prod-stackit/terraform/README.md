@@ -6,6 +6,10 @@
 
 This directory contains all the necessary files and configurations to run Terraform within GitHub Actions.
 
+### `./40_organization`
+
+This directory contains Terraform code for managing resources at the STACKIT organization level. It represents a single Terraform deployment without any subdirectories.
+
 ### `./50_projects`
 
 Each subdirectory within `./50_projects` corresponds to a specific STACKIT project. These subdirectories contain the complete deployment configurations for their respective projects.
