@@ -1,4 +1,4 @@
-name: prod-stackit-terraform-team-iac-test01
+name: prod-stackit-terraform-40-organization
 
 on:
   workflow_dispatch:
