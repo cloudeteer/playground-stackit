@@ -1,1917 +1,1938 @@
-{
-  "items": [
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "71ff6b156755e7b1c0322634834a75f6a2a3ff97ad3396a193cf7c0f5c6fba3bc6d86dc0a9f889be7c91564ec425c87a65d134642131c6b39a9821a728563871"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2025-02-28T08:58:49Z",
-      "diskFormat": "raw",
-      "id": "4d7f783c-9b91-427d-bb34-5ac6947725cf",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.21.0-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1551609856,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-04T07:55:55Z"
+[
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "45f878c2e2a2039b3d55f4c03a6324dd23ee5bc9b699c060e02c7f8f32b27991ddc87d1c03f92dc21ac96c29e448409363d0fee30d56e308bd189f9f0694ffbd"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "46c1c550c7f71a5db7c5133af5143d1a01c03094ec2e0839a5a82db7456d76dcab651866a031e9ccb0ba7c359d4e95c931ae4b85ffd1601dd506aada00b74f68"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2025-02-13T09:59:46Z",
-      "diskFormat": "raw",
-      "id": "c95cc764-4825-4b1b-98f5-a0d5fb56fef4",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.20.1-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1550151680,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-02-14T09:37:17Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "b91595ac7c4cec9e979ef6068a4377a225b58382967bc97d773b99fcfe78ff4ea2d637f83007a9ce5161f8a48c8894490c1bc4f150491d79966786d425560463"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-12-04T08:49:40Z",
-      "diskFormat": "raw",
-      "id": "8675c7be-5b83-48ba-ab19-fbe24e87cccf",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-nightly-v2.21.0-pre.0.20241204083014-ab2782a2a2be",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1550147584,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-12-09T13:52:02Z"
+    "createdAt": "2025-03-06T16:06:24Z",
+    "diskFormat": "raw",
+    "id": "ec137989-2c50-4584-bc7f-0da684462e94",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.21.1-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1551609856,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-11T12:29:17Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "71ff6b156755e7b1c0322634834a75f6a2a3ff97ad3396a193cf7c0f5c6fba3bc6d86dc0a9f889be7c91564ec425c87a65d134642131c6b39a9821a728563871"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "e8880fbfe169bce59e97cd05ed6a443d5c710733a27cd99b110e83fc48fc1107aed3829283f29677016aa20a173ad4e0b7d14e0e33bc15888a9e2f1574afbb44"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-12-03T22:08:35Z",
-      "diskFormat": "raw",
-      "id": "ad470241-a9be-4d1f-ac73-fb832aa8cbda",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.20.0-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1550147584,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-12-09T13:45:13Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "f33d6e54f8cb2cbf8b24a27031cca950edf8df052a12f90960d520e84f87a7c2212a87d357ff4279ab24432332f2fc38668d5efb657aeabc0514b92be208409b"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-11-25T09:48:22Z",
-      "diskFormat": "raw",
-      "id": "59916268-876b-4b84-9e50-77be54f41c2b",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.19.3-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1549938688,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-26T12:48:27Z"
+    "createdAt": "2025-02-28T08:58:49Z",
+    "diskFormat": "raw",
+    "id": "4d7f783c-9b91-427d-bb34-5ac6947725cf",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.21.0-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1551609856,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-04T07:55:55Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "46c1c550c7f71a5db7c5133af5143d1a01c03094ec2e0839a5a82db7456d76dcab651866a031e9ccb0ba7c359d4e95c931ae4b85ffd1601dd506aada00b74f68"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "d5191debfd3bc87abf8dfe5cc871126221a3ebcaaf0a60f1c512da047b441ef994a59b4077e1f107db485290d0b0ae4b1de75c0fc1334f65bcc9392b0af05cbd"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-11-05T09:59:35Z",
-      "diskFormat": "raw",
-      "id": "8bf4d5cb-d37a-4392-b854-6ea6bc3b779b",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.19.2-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1549934592,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-26T12:45:58Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "076b411adef7d7d1cc7d437c21430300e61984dd3dd297a188312405a82b4de124182efd09d3ee40bef3f87e2e10a941d50b0901e822a422c135da2392735b4b"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-11-04T08:30:02Z",
-      "diskFormat": "raw",
-      "id": "e5cb626c-f17f-410c-add6-6d1f091f43cc",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.19.1-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1550131200,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-26T12:43:39Z"
+    "createdAt": "2025-02-13T09:59:46Z",
+    "diskFormat": "raw",
+    "id": "c95cc764-4825-4b1b-98f5-a0d5fb56fef4",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.20.1-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1550151680,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-02-14T09:37:17Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b91595ac7c4cec9e979ef6068a4377a225b58382967bc97d773b99fcfe78ff4ea2d637f83007a9ce5161f8a48c8894490c1bc4f150491d79966786d425560463"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "b83c40904b29d42f74ec509de7dd24162a0e630dbb6f062e79baefcd41bd45acd070b872006d38f1230b67705cc35a80ee20fda53e14e2c942ed28d2250880ba"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-10-18T11:42:28Z",
-      "diskFormat": "raw",
-      "id": "e7311b3f-ad47-47bc-b2a1-c1865d2b5de8",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.19.0-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1549934592,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-10-21T07:40:52Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "b7eeea82832f50f91b7c7fee19f1a490d8970cf1856df057e3fd3f8c1a74c25588c9ee86472153712649971311029b40d2525e110ca2466ab626a24a1eb167dd"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-09-26T09:48:57Z",
-      "diskFormat": "raw",
-      "id": "1bc30028-52c6-4980-bb5c-a2c5d7a5400d",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.18.0-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1545281536,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-09-27T08:00:29Z"
+    "createdAt": "2024-12-04T08:49:40Z",
+    "diskFormat": "raw",
+    "id": "8675c7be-5b83-48ba-ab19-fbe24e87cccf",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-nightly-v2.21.0-pre.0.20241204083014-ab2782a2a2be",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1550147584,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-12-09T13:52:02Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "e8880fbfe169bce59e97cd05ed6a443d5c710733a27cd99b110e83fc48fc1107aed3829283f29677016aa20a173ad4e0b7d14e0e33bc15888a9e2f1574afbb44"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "757e4af2ff6bdc073ac6064438900ba1a265ba859af4f835373ad83ad6ca4603af77d1b24bfe3b5891812dd9d5181fa8de40921f7b73e9c7e9dad221d4dd6995"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-07-02T08:28:52Z",
-      "diskFormat": "raw",
-      "id": "d12cd1ca-b21c-4609-9dbf-5ae50522c012",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.17.0-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1546711040,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-07-03T12:30:24Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8d46f1aa2ecd3bed6eb3a6db63b4731999f5942ee0fac03d25811248cb015706d387db68f146c2331e88ce7d53aad5ae51fd33b668e5015ffe94aa06698821bd"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-05-14T13:07:38Z",
-      "diskFormat": "raw",
-      "id": "25edf48d-161f-452b-b420-963c3a80abd8",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.16.4-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1529663488,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-05-16T07:09:11Z"
+    "createdAt": "2024-12-03T22:08:35Z",
+    "diskFormat": "raw",
+    "id": "ad470241-a9be-4d1f-ac73-fb832aa8cbda",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.20.0-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1550147584,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-12-09T13:45:13Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "f33d6e54f8cb2cbf8b24a27031cca950edf8df052a12f90960d520e84f87a7c2212a87d357ff4279ab24432332f2fc38668d5efb657aeabc0514b92be208409b"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8d703bdf46ce027e9eadbc75e5652589affaddab7b023260e7bfcbc27f8d1e088f455853f6c3b3b314e60784eae24325e8352ffb6bf92eec349fe4272779c12e"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-04-11T08:02:32Z",
-      "diskFormat": "raw",
-      "id": "cb6cd9eb-99ce-456a-9aab-a4250f0d4763",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.16.3-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1529643008,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-04-26T06:22:06Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "af5fcbb22d7d38443e4a11c45583fab0c0ec197a5b866cd653027c3458a57de57e6ccec89c154f083c687acff21eac3e9e3de256db936bc399da483288d7eef0"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-04-05T13:36:15Z",
-      "diskFormat": "raw",
-      "id": "4e67d3b0-7771-4805-b0ce-4c60800f2827",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.16.2-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1529643008,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-05-16T11:23:21Z"
+    "createdAt": "2024-11-25T09:48:22Z",
+    "diskFormat": "raw",
+    "id": "59916268-876b-4b84-9e50-77be54f41c2b",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.19.3-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1549938688,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-26T12:48:27Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "d5191debfd3bc87abf8dfe5cc871126221a3ebcaaf0a60f1c512da047b441ef994a59b4077e1f107db485290d0b0ae4b1de75c0fc1334f65bcc9392b0af05cbd"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "38c2b215942dd790a542c8904276e971bab01cb485c14287fafeddf4670bdb6af711de4cb6052461486892db0b13afaa2899d2322fc05824654be583412433da"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "uefi": true
-      },
-      "createdAt": "2024-03-11T17:52:50Z",
-      "diskFormat": "raw",
-      "id": "b92e75cf-6431-4ded-a4cd-351012145d96",
-      "labels": {},
-      "minDiskSize": 0,
-      "minRam": 0,
-      "name": "constellation-stable-v2.16.1-qemu-vtpm",
-      "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
-      "protected": false,
-      "scope": "public",
-      "size": 1529643008,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-03-14T08:35:26Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "caeaf6d72a16c1985c03a2eae8a54dc461955eca1a07e57ea7f3e40c43bff29629f73ea4e4a8be59361f261d3e7130a61a8dcd3d14419ecabb3d4e7b4e870c13"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "constellation",
-        "operatingSystemVersion": "2.15.0"
-      },
-      "createdAt": "2024-02-16T10:53:15Z",
-      "diskFormat": "raw",
-      "id": "2c5f6b18-f5df-49c6-b46a-9a0f46aff1ab",
-      "labels": {},
-      "minDiskSize": 32,
-      "minRam": 8,
-      "name": "csp-image-test",
-      "owner": "8062d002-3b1d-4e05-b37c-106ee6c440ae",
-      "protected": false,
-      "scope": "public",
-      "size": 1529229312,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-02-16T10:56:30Z"
+    "createdAt": "2024-11-05T09:59:35Z",
+    "diskFormat": "raw",
+    "id": "8bf4d5cb-d37a-4392-b854-6ea6bc3b779b",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.19.2-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1549934592,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-26T12:45:58Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "076b411adef7d7d1cc7d437c21430300e61984dd3dd297a188312405a82b4de124182efd09d3ee40bef3f87e2e10a941d50b0901e822a422c135da2392735b4b"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "caeaf6d72a16c1985c03a2eae8a54dc461955eca1a07e57ea7f3e40c43bff29629f73ea4e4a8be59361f261d3e7130a61a8dcd3d14419ecabb3d4e7b4e870c13"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "constellation",
-        "operatingSystemVersion": "2.15.0",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-02-15T12:32:57Z",
-      "diskFormat": "raw",
-      "id": "47153b5f-a1a2-4808-83dd-89a579773f13",
-      "labels": {},
-      "minDiskSize": 32,
-      "minRam": 8,
-      "name": "sck-image-2-15-0",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 1529229312,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-02-28T08:51:49Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "09c1646afcea16db9ea6dfcede551fa2d513841625c81b040c7d7aeba8cfc769957ef27074a81be098ceff8841fdce2a596ac241a1bfa942ed724363af6b3d1a"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "debian",
-        "operatingSystemVersion": "11",
-        "uefi": true
-      },
-      "createdAt": "2025-03-06T10:23:10Z",
-      "diskFormat": "raw",
-      "id": "c9dda214-e316-49ae-9a44-42268660990b",
-      "labels": {
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Debian 11",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 3221225472,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-06T10:34:34Z"
+    "createdAt": "2024-11-04T08:30:02Z",
+    "diskFormat": "raw",
+    "id": "e5cb626c-f17f-410c-add6-6d1f091f43cc",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.19.1-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1550131200,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-26T12:43:39Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b83c40904b29d42f74ec509de7dd24162a0e630dbb6f062e79baefcd41bd45acd070b872006d38f1230b67705cc35a80ee20fda53e14e2c942ed28d2250880ba"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "44f5d682253fd36ce54d6a4d01f2c4330b404b03a002c0f560726946f4584f829bde736bad700148ff312767ff432e60da007019cb86113bd5813c6097e937f8"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "debian",
-        "operatingSystemVersion": "12",
-        "uefi": true
-      },
-      "createdAt": "2025-03-06T10:21:33Z",
-      "diskFormat": "raw",
-      "id": "a1413b23-b529-45a3-8323-44b7b91b1828",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Debian 12",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 3221225472,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-06T10:42:45Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "88c994f3e5a2bdb6488ad19c8c9257b1f407ad5f3e0054d8e4fc3281bfc2576906c1c2095df7d3b90d8c0fe406671a2d61284dc5626ebbae724268760fe7cb30"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "debian-arm64",
-        "operatingSystemVersion": "12",
-        "uefi": true
-      },
-      "createdAt": "2025-03-06T10:21:16Z",
-      "diskFormat": "raw",
-      "id": "d98c436c-ff52-4e81-9353-cdd73598d415",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Debian 12 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 3221225472,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-06T10:28:38Z"
+    "createdAt": "2024-10-18T11:42:28Z",
+    "diskFormat": "raw",
+    "id": "e7311b3f-ad47-47bc-b2a1-c1865d2b5de8",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.19.0-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1549934592,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-10-21T07:40:52Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b7eeea82832f50f91b7c7fee19f1a490d8970cf1856df057e3fd3f8c1a74c25588c9ee86472153712649971311029b40d2525e110ca2466ab626a24a1eb167dd"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "6a92fe394620da56039ca773be3a4e95198584910751527bda06f4683ea0ac02cb16a52999c281e2b9e86e33d08921e34da79e4f6aaeab5e3a9190daada527bb"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "centos-stream",
-        "operatingSystemVersion": "10"
-      },
-      "createdAt": "2025-03-06T02:52:38Z",
-      "diskFormat": "raw",
-      "id": "9b0983fd-36d6-4894-824a-2cb60502f336",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "CentOS Stream 10",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-06T03:04:48Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "e0ae3b202547aca7b533430f0dcf5df875e935c8e2bfda9e29cb3a1500e7a4de5f3867992118deab3defe3ff9938eb914553e910f03ed0c81d0b6f294156f299"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu",
-        "operatingSystemVersion": "22.04",
-        "uefi": true
-      },
-      "createdAt": "2025-03-05T13:42:40Z",
-      "diskFormat": "raw",
-      "id": "0884604c-5d04-4cc1-975a-b3c9c3b9fcda",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Ubuntu 22.04",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 2361393152,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-05T13:53:47Z"
+    "createdAt": "2024-09-26T09:48:57Z",
+    "diskFormat": "raw",
+    "id": "1bc30028-52c6-4980-bb5c-a2c5d7a5400d",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.18.0-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1545281536,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-09-27T08:00:29Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "757e4af2ff6bdc073ac6064438900ba1a265ba859af4f835373ad83ad6ca4603af77d1b24bfe3b5891812dd9d5181fa8de40921f7b73e9c7e9dad221d4dd6995"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "440182e73f975b31a37f75359e702a5200a3f1ade74c7a14b5a28d8a7d16474dc09c6cb511df15702db047505fa8b4395131d08ff676c95c4466abacbea79d42"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu-arm64",
-        "operatingSystemVersion": "22.04",
-        "uefi": true
-      },
-      "createdAt": "2025-03-05T13:40:46Z",
-      "diskFormat": "raw",
-      "id": "519351ec-ace9-40cf-bd96-ba57d9cc8f15",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Ubuntu 22.04 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 2361393152,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-05T13:52:22Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "3e97df7f3710ad2ee1dcdd255f24154e364a42297da3df9bfa034321a97f9ed992f0575f98afe9d6f1a68fac4e10184a340f95cdc6d36afbfdefd2b12b775a99"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "centos-stream",
-        "operatingSystemVersion": "9"
-      },
-      "createdAt": "2025-03-04T10:42:53Z",
-      "diskFormat": "raw",
-      "id": "831fd328-a5a8-49b0-95a4-4d020c264d89",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "CentOS Stream 9",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-04T10:53:46Z"
+    "createdAt": "2024-07-02T08:28:52Z",
+    "diskFormat": "raw",
+    "id": "d12cd1ca-b21c-4609-9dbf-5ae50522c012",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.17.0-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1546711040,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-07-03T12:30:24Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "8d46f1aa2ecd3bed6eb3a6db63b4731999f5942ee0fac03d25811248cb015706d387db68f146c2331e88ce7d53aad5ae51fd33b668e5015ffe94aa06698821bd"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8fe53ab7b05e28adde7e2beeda64ba99d30d8cf5b1f829c97a9449e69bc081819cd1dcadcd3dc2f5ae3ea86dc35d82f8595172143ab1ff8c270e597c43af8b53"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "centos-stream-arm64",
-        "operatingSystemVersion": "9",
-        "uefi": true
-      },
-      "createdAt": "2025-03-04T10:42:26Z",
-      "diskFormat": "raw",
-      "id": "f3c05bf7-7109-4163-8459-638b61342826",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "CentOS Stream 9 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-04T10:53:15Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "abc0eee330955ad50a6f13c910408d0473a16d1c06ca57bbec1679347a0b3d7125148018f238f726b70a826dbc1f3862a86a832d4b95d8897bf36c2066974f9e"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu-arm64",
-        "operatingSystemVersion": "24.04",
-        "uefi": true
-      },
-      "createdAt": "2025-02-28T23:00:27Z",
-      "diskFormat": "raw",
-      "id": "882a8fdc-3bc9-403e-96e0-e1c92a8ed7a9",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 4,
-      "minRam": 0,
-      "name": "Ubuntu 24.04 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 3758096384,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-02-28T23:13:09Z"
+    "createdAt": "2024-05-14T13:07:38Z",
+    "diskFormat": "raw",
+    "id": "25edf48d-161f-452b-b420-963c3a80abd8",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.16.4-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1529663488,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-05-16T07:09:11Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "8d703bdf46ce027e9eadbc75e5652589affaddab7b023260e7bfcbc27f8d1e088f455853f6c3b3b314e60784eae24325e8352ffb6bf92eec349fe4272779c12e"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "3ba46c586bac482e765383a246391d758dc4814cb1ce7121e155ea9c98feab5d1f147a07caf5a9c8382aaf514e6be9a9407807e764374619a7bd52f3b364ec3d"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu",
-        "operatingSystemVersion": "24.04",
-        "uefi": true
-      },
-      "createdAt": "2025-02-28T22:58:00Z",
-      "diskFormat": "raw",
-      "id": "117e8764-41c2-405f-aece-b53aa08b28cc",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 4,
-      "minRam": 0,
-      "name": "Ubuntu 24.04",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 3758096384,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-02-28T23:12:48Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "1ef995e1ada056c72c9875ebfe41f4d768a6ac34746e896d09f545ba5d3e8914b9859ddcc2849cca756c706954fe5ba7d89b487f5c5b63b656fa4805181c6117"
-      },
-      "config": {
-        "operatingSystem": "windows",
-        "operatingSystemDistro": "Windows Server 2019 Standard",
-        "operatingSystemVersion": "2025",
-        "videoModel": "vga"
-      },
-      "createdAt": "2025-02-28T21:24:32Z",
-      "diskFormat": "raw",
-      "id": "02bd744c-16d6-4765-bb95-520e141c9296",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "noSSH": "",
-        "prod": "",
-        "public": "",
-        "qa": "",
-        "storage_premium_perf4": "",
-        "windows": ""
-      },
-      "minDiskSize": 32,
-      "minRam": 2048,
-      "name": "Windows Server 2025 Standard",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 22020096000,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-01T09:41:52Z"
+    "createdAt": "2024-04-11T08:02:32Z",
+    "diskFormat": "raw",
+    "id": "cb6cd9eb-99ce-456a-9aab-a4250f0d4763",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.16.3-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1529643008,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-04-26T06:22:06Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "af5fcbb22d7d38443e4a11c45583fab0c0ec197a5b866cd653027c3458a57de57e6ccec89c154f083c687acff21eac3e9e3de256db936bc399da483288d7eef0"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8eb90ae31cdd115fb3e4a532aeb3274a3a6d9982301abadadf3e34511e449428b657887dd9f52ab61d11fda929d780ddccd7e44714f778ae9f24da941d263225"
-      },
-      "config": {
-        "operatingSystem": "windows",
-        "operatingSystemDistro": "Windows Server 2019 Standard",
-        "operatingSystemVersion": "2016",
-        "videoModel": "vga"
-      },
-      "createdAt": "2025-02-28T20:05:24Z",
-      "diskFormat": "raw",
-      "id": "a483b2e8-e078-4dc0-a7b7-d957f6a230d0",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "noSSH": "",
-        "prod": "",
-        "public": "",
-        "qa": "",
-        "storage_premium_perf4": "",
-        "windows": ""
-      },
-      "minDiskSize": 32,
-      "minRam": 2048,
-      "name": "Windows Server 2016 Standard",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 33554432000,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-01T10:15:24Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "84803c7b0c5f3f7b86b03df77d4df88baccc26f871216fa42f5ab540379838b74afbed99cb9896bb4fd78b3a843970ee13fbe0041bdba69d4aac468adb1de7e7"
-      },
-      "config": {
-        "operatingSystem": "windows",
-        "operatingSystemDistro": "Windows Server 2019 Standard",
-        "operatingSystemVersion": "2022",
-        "videoModel": "vga"
-      },
-      "createdAt": "2025-02-28T19:35:19Z",
-      "diskFormat": "raw",
-      "id": "ba267a51-a35f-4488-9333-6e84a3754b09",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "noSSH": "",
-        "prod": "",
-        "public": "",
-        "qa": "",
-        "storage_premium_perf4": "",
-        "windows": ""
-      },
-      "minDiskSize": 32,
-      "minRam": 2048,
-      "name": "Windows Server 2022 Standard",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 20971520000,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-01T10:18:15Z"
+    "createdAt": "2024-04-05T13:36:15Z",
+    "diskFormat": "raw",
+    "id": "4e67d3b0-7771-4805-b0ce-4c60800f2827",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.16.2-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1529643008,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-05-16T11:23:21Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "38c2b215942dd790a542c8904276e971bab01cb485c14287fafeddf4670bdb6af711de4cb6052461486892db0b13afaa2899d2322fc05824654be583412433da"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "ca0fbc6de9a8153b8c7328c10a560bd47d385b3660b0c6126f8075371825e6434fc257cc91a45efd626dd87493a0cd0c3d1b229cb759accef4f9dcedd11da556"
-      },
-      "config": {
-        "operatingSystem": "windows",
-        "operatingSystemDistro": "Windows Server 2019 Standard",
-        "operatingSystemVersion": "2019",
-        "videoModel": "vga"
-      },
-      "createdAt": "2025-02-28T18:13:47Z",
-      "diskFormat": "raw",
-      "id": "a39513a2-8f1f-4f90-b615-3235f11d4838",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "noSSH": "",
-        "prod": "",
-        "public": "",
-        "qa": "",
-        "storage_premium_perf4": "",
-        "windows": ""
-      },
-      "minDiskSize": 32,
-      "minRam": 2048,
-      "name": "Windows Server 2019 Standard",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 20971520000,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-03-01T10:18:09Z"
+    "config": {
+      "operatingSystem": "linux",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "7da99d872d466a2e0aa6d41efb21e902bb862b545943c2b2d063039b869ee1ecc1ae0ad1bb8b22b6401c975a3aa1756791ac89fa3cba26f1f04a6fa4369837cd"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu",
-        "operatingSystemVersion": "20.04",
-        "uefi": true
-      },
-      "createdAt": "2025-02-19T10:01:05Z",
-      "diskFormat": "raw",
-      "id": "b771d752-8c4a-4735-8cd1-d2b8d5bfb1bc",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Ubuntu 20.04",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 2361393152,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-02-19T10:10:11Z"
+    "createdAt": "2024-03-11T17:52:50Z",
+    "diskFormat": "raw",
+    "id": "b92e75cf-6431-4ded-a4cd-351012145d96",
+    "labels": {},
+    "minDiskSize": 0,
+    "minRam": 0,
+    "name": "constellation-stable-v2.16.1-qemu-vtpm",
+    "owner": "8a694a67-be5a-4d2f-b109-b2128a7c991c",
+    "protected": false,
+    "scope": "public",
+    "size": 1529643008,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-03-14T08:35:26Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "caeaf6d72a16c1985c03a2eae8a54dc461955eca1a07e57ea7f3e40c43bff29629f73ea4e4a8be59361f261d3e7130a61a8dcd3d14419ecabb3d4e7b4e870c13"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "b6eb54a98f339c62f27dcbdc824eb127bbef972e4b24d2c406ad776ba503c80d4668b88e825192b29e8f43fb44f9fd2723190eacdc939937774b49294410ee62"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "fedora-arm64",
-        "operatingSystemVersion": "41",
-        "uefi": true
-      },
-      "createdAt": "2024-12-06T09:07:14Z",
-      "diskFormat": "raw",
-      "id": "5af37b3f-16dc-49a8-bed1-c38355a343a4",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 5,
-      "minRam": 0,
-      "name": "Fedora 41 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 5368709120,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-12-06T09:17:51Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "constellation",
+      "operatingSystemVersion": "2.15.0"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "1e64b3f824d87af5f39aeaa56209ab67e22e3f7d4510dfa7c5c13c18283c4dc11392260d90ade5cc2ea651954d61bfc7b487ed07f973c46bc09f573c794517a8"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "fedora",
-        "operatingSystemVersion": "41",
-        "uefi": true
-      },
-      "createdAt": "2024-12-06T09:04:42Z",
-      "diskFormat": "raw",
-      "id": "ddf23cd8-2d7b-464c-891a-b9ed47b016f8",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 5,
-      "minRam": 0,
-      "name": "Fedora 41",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 5368709120,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:49:00Z"
+    "createdAt": "2024-02-16T10:53:15Z",
+    "diskFormat": "raw",
+    "id": "2c5f6b18-f5df-49c6-b46a-9a0f46aff1ab",
+    "labels": {},
+    "minDiskSize": 32,
+    "minRam": 8,
+    "name": "csp-image-test",
+    "owner": "8062d002-3b1d-4e05-b37c-106ee6c440ae",
+    "protected": false,
+    "scope": "public",
+    "size": 1529229312,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-02-16T10:56:30Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "caeaf6d72a16c1985c03a2eae8a54dc461955eca1a07e57ea7f3e40c43bff29629f73ea4e4a8be59361f261d3e7130a61a8dcd3d14419ecabb3d4e7b4e870c13"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "f24088db41ff64ecabf2733e2a19338a6895f614597d2ce18e429d8842d8f3bc54ebce85f0c47f43a3d359598bcae572737aa7fc0b01b1a14fa5271b2566e449"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.0"
-      },
-      "createdAt": "2024-11-27T14:13:56Z",
-      "diskFormat": "raw",
-      "id": "1d1cae77-8393-4d9e-aea1-65667c09bf77",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.0 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-27T15:15:21Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "constellation",
+      "operatingSystemVersion": "2.15.0",
+      "secureBoot": true,
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "f87258eedbb6f78a2bf751adc51064799a6d54d80be2b7730b119d55e8cc9ecc792ea180a71c3e9a4829d4c2ba99e0c0a46ba92eb4eebca9c8cd1cb512eae0e9"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.0",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-27T13:18:01Z",
-      "diskFormat": "raw",
-      "id": "857bf127-1a68-4f34-bda6-4772e8d04a08",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.0",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:52:27Z"
+    "createdAt": "2024-02-15T12:32:57Z",
+    "diskFormat": "raw",
+    "id": "47153b5f-a1a2-4808-83dd-89a579773f13",
+    "labels": {},
+    "minDiskSize": 32,
+    "minRam": 8,
+    "name": "sck-image-2-15-0",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 1529229312,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-02-28T08:51:49Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "5928781ff1ca93addc5cc0e81db3b664913fe570cbced285d9b890bb24569f717a754bec23640df0acc87e291a28e14fc99411163bbcfcab668d22fe904f566a"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "68a4c3dfa0ec7f82dfbfc3ec73ef009e58a565d01c77c5effa63ce0da824326614f268e57a9d4cfb27fe74dfd67f4cf1681df00e16459c1b98bfc9999ec93da9"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.1"
-      },
-      "createdAt": "2024-11-26T15:40:50Z",
-      "diskFormat": "raw",
-      "id": "5c427d2a-d7f0-4229-be6c-08ee938c3710",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.1 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-26T16:20:21Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "debian",
+      "operatingSystemVersion": "11",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "c4b34dbd4def796edd786ae24a45a7360da4bf820c4ecbb75a2fe19cc19ef23bd94a800d45b2b3565666eded15a23f2f9c831fa27866807eb78bc51df2803fcf"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.6"
-      },
-      "createdAt": "2024-11-26T15:28:42Z",
-      "diskFormat": "raw",
-      "id": "30381bf1-0ede-4348-964d-1898551b538e",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.6 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-26T16:09:51Z"
+    "createdAt": "2025-03-20T10:23:03Z",
+    "diskFormat": "raw",
+    "id": "e61d28f8-b516-4687-b58f-6db872047940",
+    "labels": {
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "b928dc5170ffcc43d713ea1c0b4848f399d50c3da10b5f017a81099ccfee334b834e64b35c35e6df8e4e667a0eefea63a3d85efba1cf9265c6d67dfff4359382"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.1",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-26T14:38:11Z",
-      "diskFormat": "raw",
-      "id": "a419f28d-e364-4538-ab96-d00941f7081c",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.1",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:52:15Z"
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Debian 11",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 3221225472,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-20T10:32:12Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "f3a1d4cc87b18cc3d62d417b89e4409cec2016c2a5f1a674a1637524c6bc05d27f0698b6987e7eae30f04be687b6e707c2edb5964f1bb7770246922c508a46af"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "a177dccb95d0dee1d5e92e51b766239711ff365f2f278cb77691e057e65e8caab36496b0defa9a7edb4973940d5576d261f31b3dc50a62cc2e2ca25c2fa3b429"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.6",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-26T13:46:54Z",
-      "diskFormat": "raw",
-      "id": "23c86982-8abd-4274-8698-9f98db182226",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.6",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:53:23Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "debian",
+      "operatingSystemVersion": "12",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "0552fe7608ee8861976e83b40bb791889b3ce3b65f7d27b577041af426a505d00b987fc04467fc10941a2a3af462c5d83cf7f77fd15e37ea85a4a96f7dbb995d"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.2"
-      },
-      "createdAt": "2024-11-25T15:44:41Z",
-      "diskFormat": "raw",
-      "id": "130e1325-cee1-4494-a056-82d505fecf04",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.2 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-25T16:39:59Z"
+    "createdAt": "2025-03-20T10:21:30Z",
+    "diskFormat": "raw",
+    "id": "98390c53-58b7-48f1-b664-c86f45291b98",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "18d7a2adf1c73577355a5b264579e39d1d6816308e4029b88ae2c6d2b1393b6e6e329b2fb6662ea712c5c8fe9636f2de32a4b0bfab4f0a9db8c1f786402d3fb8"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.7",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-25T15:35:44Z",
-      "diskFormat": "raw",
-      "id": "b7c15e1e-caef-44d3-b190-461cc6dcca44",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.7",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:53:12Z"
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Debian 12",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 3221225472,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-20T10:29:02Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "bebcc60455e5a54cb5933e4797adfe53e6d663638c30f64f34d27afe79501ece1102e430711fa445a3664dccb8e3eeac4197c61364fa2e40daae38f2e160c52d"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "426346ed5b87e82b3022d18c2159746dbc095deff7a40bbe291fbfa7ea822a6ddfa8a899067c499ca8fe299c6c341653041f823b2a2cb25d3f525582b24cbee5"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.7"
-      },
-      "createdAt": "2024-11-25T15:30:43Z",
-      "diskFormat": "raw",
-      "id": "c0aad4e6-c186-4445-9a23-26f57565e53e",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.7 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-25T16:10:29Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "debian-arm64",
+      "operatingSystemVersion": "12",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8901ec41890f3c9f881806e2cd3d08eb2cd7a61f1e1521c63ed23fefb54e11f8f538f0ab48c9636abcade0a2c864a6662bf3cab93e2da27598e868d812c0c7ea"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.2",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-25T13:57:18Z",
-      "diskFormat": "raw",
-      "id": "ee0027e4-f749-449c-9d33-194124c692e2",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.2",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:52:06Z"
+    "createdAt": "2025-03-20T10:21:09Z",
+    "diskFormat": "raw",
+    "id": "fa743dec-bf4c-4f91-aaa8-7bd450249b80",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "6e561911971674ac4dde262e4e857fd2836d093fb5e60f1c23f47d74393ce0a21e7dc1fa7ff6a92339c85d052c5432513fbaa29a54c18e85b60e9f2a51ada86e"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "almalinux",
-        "operatingSystemVersion": "9",
-        "uefi": true
-      },
-      "createdAt": "2024-11-25T11:04:05Z",
-      "diskFormat": "raw",
-      "id": "0387815e-b7f7-4c1d-8772-079ae795c2af",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "AlmaLinux 9",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:45:55Z"
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Debian 12 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 3221225472,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-20T10:28:01Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "c00d2ced0a67beb5c3d0439914fff5b64e404d4984f02ea3ed53db3928ef7c9dbe332ecf4bb191eafee4cec81d3020bca492f72a2cfcee3567fcde14d6574edf"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "da4572467c671eeb9edca7f2d48f79f2f4945da8d01880c1b95da5063188bb8f2f4f8826284823cb6ef71232f1c09203de7d12b40ca694682c444f79fb8fa1cf"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "almalinux-9-arm64",
-        "operatingSystemVersion": "9",
-        "uefi": true
-      },
-      "createdAt": "2024-11-25T11:03:23Z",
-      "diskFormat": "raw",
-      "id": "67463c8a-98b3-42d0-981e-3f513405da63",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "AlmaLinux 9 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-12-05T14:04:38Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "centos-stream",
+      "operatingSystemVersion": "9"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "0b9691e9ab8ef41829fb1688d8ef2d8ef828a6384b267b92e60e0a342f79c96989125a9de6fde08f85d81368f2f2f35a402dd901869a44baaf8791e03b5cf1bb"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.3"
-      },
-      "createdAt": "2024-11-22T14:27:45Z",
-      "diskFormat": "raw",
-      "id": "d5976a00-e88f-48a7-9b46-2667ab124099",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.3 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-22T15:03:07Z"
+    "createdAt": "2025-03-18T10:43:02Z",
+    "diskFormat": "raw",
+    "id": "141c9d27-ab45-4897-9791-c06718d3480d",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "7733384e42a444abf4096448bc810c19c0893ccf179ba271ac2c075820cf4f0780c8e7da25755adc4bdf985651597012164f2e99a5bf55c48d4269ec51f96b62"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.8"
-      },
-      "createdAt": "2024-11-22T14:16:32Z",
-      "diskFormat": "raw",
-      "id": "8b68bbc4-390d-4e4f-8ca3-a1c57a1171e4",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.8 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-22T14:53:55Z"
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "CentOS Stream 9",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-18T10:52:34Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "d540235d6de0527a2397647955596b1bd0a75e09648dee449bb9452af5c1d332c580453e110f9b2d401b85ce6e92fdc5cc258cb9ecfc85bd0d05a731428a2e1e"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "f6f4ac44b47d3aff862d250e8f3a57bc557c14f6d7836d3350680168b1815b8e6508ab2ecdfa91c4a0b9328d61ab7af45a4d592d93425d9d05327ef6ed910b0d"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.8",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-22T12:16:50Z",
-      "diskFormat": "raw",
-      "id": "e40c870c-3154-4321-9c49-3ffb794eec94",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.8",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:53:01Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "centos-stream-arm64",
+      "operatingSystemVersion": "9",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "ef3156782b4de1497919c66966b2e32f5792dfb12f7e96760ddd6db6c598642662461912640535e609d9fbce5b80d0f9e882da5b15a809d1699b6e873cdf1b33"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.3",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-22T12:09:41Z",
-      "diskFormat": "raw",
-      "id": "fb1551f2-e7f2-4584-bd1b-c4db9a8b9254",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.3",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:51:58Z"
+    "createdAt": "2025-03-18T10:42:53Z",
+    "diskFormat": "raw",
+    "id": "52b79c82-0e8f-4d37-9278-e54b7352dc8b",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "033729bc56582950963388be070a85977877025993ee95a668ca179aa1d9548c4dba767e8d0d3fe29c5ff1dc1c50f957ff0b12223a24575d3914926abcbaff63"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.9"
-      },
-      "createdAt": "2024-11-21T11:29:47Z",
-      "diskFormat": "raw",
-      "id": "a13d9931-f1ee-4908-b3e4-5e3c492735eb",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.9 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-21T12:28:49Z"
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "CentOS Stream 9 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-18T10:52:14Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "e89e37c7e1b339a4bd47e16734624bf9c332e910927cc39cff004d529ce964d3b3242e11cc717ff461a81d42c94e36f1e9d17e92393af87a66557dd1391992db"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "fec8b8b7c181e1276e690a629214979f50f67b4a43c993552bf31f182c267263b51df93c87c37e07d1c268d40d31f3e29cf966347e786d051f74d1146dc4ba48"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.4"
-      },
-      "createdAt": "2024-11-21T11:18:35Z",
-      "diskFormat": "raw",
-      "id": "23606c6a-a838-4a34-a771-46e92fd3a350",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.4 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-22T11:14:19Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "centos-stream",
+      "operatingSystemVersion": "10"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "e31cac81b251e63d2f89c324d1822340ba7a583d0c218f35b96a2a481836ceaf1595ee8fc12feafaed13ffc705002db1ae9927108622e6dcc891c827c11804b7"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.4",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-21T11:18:10Z",
-      "diskFormat": "raw",
-      "id": "94d17fd5-6591-42c0-bb59-997ca04f562c",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9.4",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:51:49Z"
+    "createdAt": "2025-03-18T02:52:20Z",
+    "diskFormat": "raw",
+    "id": "765ad0c3-c014-41a3-b7e7-ce6ff48920ad",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "486c122bf2f6a578e966b18000fce2625e0ca5280c080e561931f619d4726c29063b5fec9a671fd5b3b0779bb7b601aaaaad09494007f6b2c63f1ba165fe8bc1"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8.9",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-21T11:10:39Z",
-      "diskFormat": "raw",
-      "id": "15f12bfb-ed5f-4786-934c-b09a59b830c7",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8.9",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:52:51Z"
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "CentOS Stream 10",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-18T03:05:46Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "86297045b80b5b1cd7f71e4f322a46e8c2ba765b0954f39f873c0afd3b33336499b02f29b868bc1449d6b239165adc6314699ad222e261be66ae3c26c40134cd"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "a01fe522c969e7c2107b4db1c5c404395cbef25e038e8f6b655af16699032eb88cba13a1da6e48c385975a20b5dc4668a5a253019cb58bb2206b91b9beb2f400"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8"
-      },
-      "createdAt": "2024-11-20T13:49:59Z",
-      "diskFormat": "raw",
-      "id": "432b7e2c-c7ec-4569-b2af-503225aa22fe",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-20T14:24:26Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu-arm64",
+      "operatingSystemVersion": "24.04",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "59733333b4c055a1b56d48d81873ac14a1a961bd8a1c2ec9d537a8298c8a52443c3cea05234eae0d6986f669eecbddb267d4555e0c40ccb0f8b051e981259d1f"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "8",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-20T13:11:01Z",
-      "diskFormat": "raw",
-      "id": "373f1ef2-9c60-4171-a242-31849a08c09f",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 8",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:53:36Z"
+    "createdAt": "2025-03-14T22:59:41Z",
+    "diskFormat": "raw",
+    "id": "5f855575-207b-4142-ae5d-0858f9a9cce7",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "29e4092f65133e68d2e2c0f8b0b23d8643d5778629427c98715e14df01d635c96b348cd3d9b035c3a380fe6878a9c58bfacfc5030908f01148d9c9a8b7e8d5f9"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rocky-linux",
-        "operatingSystemVersion": "9",
-        "uefi": true
-      },
-      "createdAt": "2024-11-19T23:09:22Z",
-      "diskFormat": "raw",
-      "id": "c4455291-0c37-4ee5-91e9-a3fe1d5c115c",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "Rocky Linux 9",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:47:41Z"
+    "minDiskSize": 4,
+    "minRam": 0,
+    "name": "Ubuntu 24.04 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 3758096384,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T23:09:15Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "c6d47a7593a8f88878bf070c9acbf554b0dba0f4e2e2ff497e87e1615a0716642da2ba730b5181e3b1fcdb3a60372279b09c1db59cc8d632cc8782b986ef3104"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "c0f4a5de30cb3da99ea13c24b5be3b828a7e46a46d2010e2264384ac34f88572df1960aa8941311b99fd951d31fccece207f0bfc4f5a9123b37b0c127d34f409"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rocky-linux-arm64",
-        "operatingSystemVersion": "9",
-        "uefi": true
-      },
-      "createdAt": "2024-11-19T23:08:27Z",
-      "diskFormat": "raw",
-      "id": "aac1c69c-f165-499f-a62f-40818f94bd55",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "Rocky Linux 9 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-12-05T13:55:09Z"
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu",
+      "operatingSystemVersion": "24.04",
+      "uefi": true
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "40013fdfb8294f29ca95778cd10920a94e2d17c945edcaeeb29d6831bab0b11ce9edfff15b8b9d046b3dfe8c79f9b96f3e4e409441e375e12be7c68e404f8fc4"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel",
-        "operatingSystemVersion": "9.5",
-        "secureBoot": true,
-        "uefi": true
-      },
-      "createdAt": "2024-11-19T11:42:05Z",
-      "diskFormat": "raw",
-      "id": "874eaed9-fd9e-4190-962f-333057e58c13",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:52:41Z"
+    "createdAt": "2025-03-14T22:57:14Z",
+    "diskFormat": "raw",
+    "id": "5fa59789-a8f2-4bb1-b3ff-c0b60a6c5cec",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "ae0713b5d9826625fa42a3debcdd45ea3b7620ff70b6503b89ec7fdef995b97373b6e105a3976fcd71e4a37e9469291d5e3d5c4b209bf40cd8a198c1ecd52734"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "almalinux",
-        "operatingSystemVersion": "8",
-        "uefi": true
-      },
-      "createdAt": "2024-08-20T22:47:06Z",
-      "diskFormat": "raw",
-      "id": "6b2e763e-24ff-4ee9-a9e3-511b1e940f5d",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "AlmaLinux 8",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:45:43Z"
+    "minDiskSize": 4,
+    "minRam": 0,
+    "name": "Ubuntu 24.04",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 3758096384,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T23:06:38Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "70fecba1471782aad04d9a69be60c08413a31638302a49eae3cf12d249e63b0b0014a12d18df0831303696604f2c5f781a1a2700bb1a6ac0afb9ca85cb66003c"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "30b6bb34a024cc12edc42b68818cca8eb6b4e7e8a964667303d4e5d344606a2825e3bfc2d319da57aeeef226024ec2b35b9b7324a41ba5f7337e90721c6a2e51"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rocky-linux",
-        "operatingSystemVersion": "8",
-        "uefi": true
-      },
-      "createdAt": "2024-05-31T22:58:12Z",
-      "diskFormat": "raw",
-      "id": "4008ff01-09de-4809-b40d-659ae3c00b6f",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 10,
-      "minRam": 0,
-      "name": "Rocky Linux 8",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 10737418240,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:47:32Z"
+    "config": {
+      "operatingSystem": "windows",
+      "operatingSystemDistro": "Windows Server 2019 Standard",
+      "operatingSystemVersion": "2019",
+      "videoModel": "vga"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "716a1efbb1199bca4bf5369676ee5431afcd5ca579217e326d447010f3a54332f73f6d47f9ee568bfc86e1a18983d1617219e3be7505af55cf4e8241f1469eab"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "fedora",
-        "operatingSystemVersion": "40",
-        "uefi": true
-      },
-      "createdAt": "2024-05-31T11:03:13Z",
-      "diskFormat": "raw",
-      "id": "acdb9336-28ef-4f9d-9c5a-444ac7be729a",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 5,
-      "minRam": 0,
-      "name": "Fedora 40",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 5368709120,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:48:52Z"
+    "createdAt": "2025-03-12T05:04:40Z",
+    "diskFormat": "raw",
+    "id": "5180ce18-9f96-4930-a356-c7cae8a427f3",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "noSSH": "",
+      "prod": "",
+      "public": "",
+      "qa": "",
+      "storage_premium_perf4": "",
+      "windows": ""
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "8f6bf240f6cec2fd3da6d55adec653aa63f4d61769043ebf027990b0a360a895a26060ad16e9a59fe6b94ec01225a863b1c9a5aa5874ca8df87936ce1c21c52e"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "rhel-arm64",
-        "operatingSystemVersion": "9.4"
-      },
-      "createdAt": "2024-05-14T12:48:09Z",
-      "diskFormat": "raw",
-      "id": "638f7a87-0d32-4b5b-8a31-dc7342feeaeb",
-      "labels": {
-        "ARM64": "",
-        "dev": "",
-        "linux": "",
-        "nvidia-gpu-supported": "",
-        "prod": "",
-        "qa": "",
-        "rhel": ""
-      },
-      "minDiskSize": 20,
-      "minRam": 1536,
-      "name": "Red Hat Enterprise Linux 9 ARM64",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 21474836480,
-      "status": "AVAILABLE",
-      "updatedAt": "2024-11-19T14:43:53Z"
+    "minDiskSize": 32,
+    "minRam": 2048,
+    "name": "Windows Server 2019 Standard",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 20971520000,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T08:39:15Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "22a38ff421b2e379d4d17d7c899e4de6f634aba9842bb548d5983be82a70fbcb51694ac6d805a5d336d67d2bc1627c5bef4d235315f70c4ebedcf61c0394cc3c"
     },
-    {
-      "checksum": {
-        "algorithm": "sha512",
-        "digest": "18c1f7f3b7b0232ae01ba402601eca8dd1a01ef809c67ed928db35068e77b7204270b0b52b19caf8a607798a68d8922bd46309c255ee9906cb991909c4a3f797"
-      },
-      "config": {
-        "operatingSystem": "linux",
-        "operatingSystemDistro": "ubuntu",
-        "operatingSystemVersion": "18.04",
-        "uefi": true,
-        "videoModel": "vga"
-      },
-      "createdAt": "2023-06-07T22:05:43Z",
-      "diskFormat": "raw",
-      "id": "6fc9de7f-c230-4311-b659-16245a82e407",
-      "labels": {
-        "STACKITServerAgent": "",
-        "dev": "",
-        "linux": "",
-        "prod": "",
-        "qa": "",
-        "unmanaged": ""
-      },
-      "minDiskSize": 3,
-      "minRam": 0,
-      "name": "Ubuntu 18.04",
-      "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
-      "protected": false,
-      "scope": "public",
-      "size": 2361393152,
-      "status": "AVAILABLE",
-      "updatedAt": "2025-01-09T11:58:10Z"
-    }
-  ]
-}
+    "config": {
+      "operatingSystem": "windows",
+      "operatingSystemDistro": "Windows Server 2019 Standard",
+      "operatingSystemVersion": "2022",
+      "videoModel": "vga"
+    },
+    "createdAt": "2025-03-12T04:20:58Z",
+    "diskFormat": "raw",
+    "id": "d65c69b5-3e98-4df8-9abe-e008bea5a2b8",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "noSSH": "",
+      "prod": "",
+      "public": "",
+      "qa": "",
+      "storage_premium_perf4": "",
+      "windows": ""
+    },
+    "minDiskSize": 32,
+    "minRam": 2048,
+    "name": "Windows Server 2022 Standard",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 20971520000,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T08:39:34Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "2ae036a05ccc555f929cdf28aa0f1f4514b9dfdd0a08078217a70b70935c91bbe1804956b45f7a831d22c24e28069901936f01e8783d576238ba43ddd6ec2d12"
+    },
+    "config": {
+      "operatingSystem": "windows",
+      "operatingSystemDistro": "Windows Server 2019 Standard",
+      "operatingSystemVersion": "2016",
+      "videoModel": "vga"
+    },
+    "createdAt": "2025-03-12T04:10:42Z",
+    "diskFormat": "raw",
+    "id": "b6b48f0a-940b-46c8-818e-2f816b2b6f64",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "noSSH": "",
+      "prod": "",
+      "public": "",
+      "qa": "",
+      "storage_premium_perf4": "",
+      "windows": ""
+    },
+    "minDiskSize": 32,
+    "minRam": 2048,
+    "name": "Windows Server 2016 Standard",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 33554432000,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T08:39:09Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b942cf1721e2125ae0fc5b8b3658d32dea7aad68f022dab3cd7e831ee7f269d95b7e7dd874bb65a20ff8dc77b251719125eb499f107b94d28f6912242f88cb6f"
+    },
+    "config": {
+      "operatingSystem": "windows",
+      "operatingSystemDistro": "Windows Server 2019 Standard",
+      "operatingSystemVersion": "2025",
+      "videoModel": "vga"
+    },
+    "createdAt": "2025-03-12T02:56:52Z",
+    "diskFormat": "raw",
+    "id": "5e2d1ffc-9c52-4041-b901-b2fcbf90630f",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "noSSH": "",
+      "prod": "",
+      "public": "",
+      "qa": "",
+      "storage_premium_perf4": "",
+      "windows": ""
+    },
+    "minDiskSize": 32,
+    "minRam": 2048,
+    "name": "Windows Server 2025 Standard",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 22020096000,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-14T08:39:45Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "06596a4fae226c42675ac8cd97ef361c551b388f31c30d6e21367abfaec790734d11a2d81386a10039a14f825a3f78b32659f95814b0ecaccd6e67988c59c3fb"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu",
+      "operatingSystemVersion": "20.04",
+      "uefi": true
+    },
+    "createdAt": "2025-03-06T22:01:05Z",
+    "diskFormat": "raw",
+    "id": "eb64dddf-e450-4b1a-96fc-5af574d564bc",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Ubuntu 20.04",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 2361393152,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-06T22:08:02Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "e0ae3b202547aca7b533430f0dcf5df875e935c8e2bfda9e29cb3a1500e7a4de5f3867992118deab3defe3ff9938eb914553e910f03ed0c81d0b6f294156f299"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu",
+      "operatingSystemVersion": "22.04",
+      "uefi": true
+    },
+    "createdAt": "2025-03-05T13:42:40Z",
+    "diskFormat": "raw",
+    "id": "0884604c-5d04-4cc1-975a-b3c9c3b9fcda",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Ubuntu 22.04",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 2361393152,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-05T13:53:47Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "440182e73f975b31a37f75359e702a5200a3f1ade74c7a14b5a28d8a7d16474dc09c6cb511df15702db047505fa8b4395131d08ff676c95c4466abacbea79d42"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu-arm64",
+      "operatingSystemVersion": "22.04",
+      "uefi": true
+    },
+    "createdAt": "2025-03-05T13:40:46Z",
+    "diskFormat": "raw",
+    "id": "519351ec-ace9-40cf-bd96-ba57d9cc8f15",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Ubuntu 22.04 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 2361393152,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-03-05T13:52:22Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b6eb54a98f339c62f27dcbdc824eb127bbef972e4b24d2c406ad776ba503c80d4668b88e825192b29e8f43fb44f9fd2723190eacdc939937774b49294410ee62"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "fedora-arm64",
+      "operatingSystemVersion": "41",
+      "uefi": true
+    },
+    "createdAt": "2024-12-06T09:07:14Z",
+    "diskFormat": "raw",
+    "id": "5af37b3f-16dc-49a8-bed1-c38355a343a4",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 5,
+    "minRam": 0,
+    "name": "Fedora 41 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 5368709120,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-12-06T09:17:51Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "1e64b3f824d87af5f39aeaa56209ab67e22e3f7d4510dfa7c5c13c18283c4dc11392260d90ade5cc2ea651954d61bfc7b487ed07f973c46bc09f573c794517a8"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "fedora",
+      "operatingSystemVersion": "41",
+      "uefi": true
+    },
+    "createdAt": "2024-12-06T09:04:42Z",
+    "diskFormat": "raw",
+    "id": "ddf23cd8-2d7b-464c-891a-b9ed47b016f8",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 5,
+    "minRam": 0,
+    "name": "Fedora 41",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 5368709120,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:49:00Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "f24088db41ff64ecabf2733e2a19338a6895f614597d2ce18e429d8842d8f3bc54ebce85f0c47f43a3d359598bcae572737aa7fc0b01b1a14fa5271b2566e449"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.0"
+    },
+    "createdAt": "2024-11-27T14:13:56Z",
+    "diskFormat": "raw",
+    "id": "1d1cae77-8393-4d9e-aea1-65667c09bf77",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.0 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-27T15:15:21Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "f87258eedbb6f78a2bf751adc51064799a6d54d80be2b7730b119d55e8cc9ecc792ea180a71c3e9a4829d4c2ba99e0c0a46ba92eb4eebca9c8cd1cb512eae0e9"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.0",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-27T13:18:01Z",
+    "diskFormat": "raw",
+    "id": "857bf127-1a68-4f34-bda6-4772e8d04a08",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.0",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:52:27Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "68a4c3dfa0ec7f82dfbfc3ec73ef009e58a565d01c77c5effa63ce0da824326614f268e57a9d4cfb27fe74dfd67f4cf1681df00e16459c1b98bfc9999ec93da9"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.1"
+    },
+    "createdAt": "2024-11-26T15:40:50Z",
+    "diskFormat": "raw",
+    "id": "5c427d2a-d7f0-4229-be6c-08ee938c3710",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.1 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-26T16:20:21Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "c4b34dbd4def796edd786ae24a45a7360da4bf820c4ecbb75a2fe19cc19ef23bd94a800d45b2b3565666eded15a23f2f9c831fa27866807eb78bc51df2803fcf"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.6"
+    },
+    "createdAt": "2024-11-26T15:28:42Z",
+    "diskFormat": "raw",
+    "id": "30381bf1-0ede-4348-964d-1898551b538e",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.6 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-26T16:09:51Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "b928dc5170ffcc43d713ea1c0b4848f399d50c3da10b5f017a81099ccfee334b834e64b35c35e6df8e4e667a0eefea63a3d85efba1cf9265c6d67dfff4359382"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.1",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-26T14:38:11Z",
+    "diskFormat": "raw",
+    "id": "a419f28d-e364-4538-ab96-d00941f7081c",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.1",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:52:15Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "a177dccb95d0dee1d5e92e51b766239711ff365f2f278cb77691e057e65e8caab36496b0defa9a7edb4973940d5576d261f31b3dc50a62cc2e2ca25c2fa3b429"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.6",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-26T13:46:54Z",
+    "diskFormat": "raw",
+    "id": "23c86982-8abd-4274-8698-9f98db182226",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.6",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:53:23Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "0552fe7608ee8861976e83b40bb791889b3ce3b65f7d27b577041af426a505d00b987fc04467fc10941a2a3af462c5d83cf7f77fd15e37ea85a4a96f7dbb995d"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.2"
+    },
+    "createdAt": "2024-11-25T15:44:41Z",
+    "diskFormat": "raw",
+    "id": "130e1325-cee1-4494-a056-82d505fecf04",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.2 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-25T16:39:59Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "18d7a2adf1c73577355a5b264579e39d1d6816308e4029b88ae2c6d2b1393b6e6e329b2fb6662ea712c5c8fe9636f2de32a4b0bfab4f0a9db8c1f786402d3fb8"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.7",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-25T15:35:44Z",
+    "diskFormat": "raw",
+    "id": "b7c15e1e-caef-44d3-b190-461cc6dcca44",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.7",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:53:12Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "426346ed5b87e82b3022d18c2159746dbc095deff7a40bbe291fbfa7ea822a6ddfa8a899067c499ca8fe299c6c341653041f823b2a2cb25d3f525582b24cbee5"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.7"
+    },
+    "createdAt": "2024-11-25T15:30:43Z",
+    "diskFormat": "raw",
+    "id": "c0aad4e6-c186-4445-9a23-26f57565e53e",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.7 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-25T16:10:29Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "8901ec41890f3c9f881806e2cd3d08eb2cd7a61f1e1521c63ed23fefb54e11f8f538f0ab48c9636abcade0a2c864a6662bf3cab93e2da27598e868d812c0c7ea"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.2",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-25T13:57:18Z",
+    "diskFormat": "raw",
+    "id": "ee0027e4-f749-449c-9d33-194124c692e2",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.2",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:52:06Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "6e561911971674ac4dde262e4e857fd2836d093fb5e60f1c23f47d74393ce0a21e7dc1fa7ff6a92339c85d052c5432513fbaa29a54c18e85b60e9f2a51ada86e"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "almalinux",
+      "operatingSystemVersion": "9",
+      "uefi": true
+    },
+    "createdAt": "2024-11-25T11:04:05Z",
+    "diskFormat": "raw",
+    "id": "0387815e-b7f7-4c1d-8772-079ae795c2af",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "AlmaLinux 9",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:45:55Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "da4572467c671eeb9edca7f2d48f79f2f4945da8d01880c1b95da5063188bb8f2f4f8826284823cb6ef71232f1c09203de7d12b40ca694682c444f79fb8fa1cf"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "almalinux-9-arm64",
+      "operatingSystemVersion": "9",
+      "uefi": true
+    },
+    "createdAt": "2024-11-25T11:03:23Z",
+    "diskFormat": "raw",
+    "id": "67463c8a-98b3-42d0-981e-3f513405da63",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "AlmaLinux 9 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-12-05T14:04:38Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "0b9691e9ab8ef41829fb1688d8ef2d8ef828a6384b267b92e60e0a342f79c96989125a9de6fde08f85d81368f2f2f35a402dd901869a44baaf8791e03b5cf1bb"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.3"
+    },
+    "createdAt": "2024-11-22T14:27:45Z",
+    "diskFormat": "raw",
+    "id": "d5976a00-e88f-48a7-9b46-2667ab124099",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.3 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-22T15:03:07Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "7733384e42a444abf4096448bc810c19c0893ccf179ba271ac2c075820cf4f0780c8e7da25755adc4bdf985651597012164f2e99a5bf55c48d4269ec51f96b62"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.8"
+    },
+    "createdAt": "2024-11-22T14:16:32Z",
+    "diskFormat": "raw",
+    "id": "8b68bbc4-390d-4e4f-8ca3-a1c57a1171e4",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.8 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-22T14:53:55Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "f6f4ac44b47d3aff862d250e8f3a57bc557c14f6d7836d3350680168b1815b8e6508ab2ecdfa91c4a0b9328d61ab7af45a4d592d93425d9d05327ef6ed910b0d"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.8",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-22T12:16:50Z",
+    "diskFormat": "raw",
+    "id": "e40c870c-3154-4321-9c49-3ffb794eec94",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.8",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:53:01Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "ef3156782b4de1497919c66966b2e32f5792dfb12f7e96760ddd6db6c598642662461912640535e609d9fbce5b80d0f9e882da5b15a809d1699b6e873cdf1b33"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.3",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-22T12:09:41Z",
+    "diskFormat": "raw",
+    "id": "fb1551f2-e7f2-4584-bd1b-c4db9a8b9254",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.3",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:51:58Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "033729bc56582950963388be070a85977877025993ee95a668ca179aa1d9548c4dba767e8d0d3fe29c5ff1dc1c50f957ff0b12223a24575d3914926abcbaff63"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.9"
+    },
+    "createdAt": "2024-11-21T11:29:47Z",
+    "diskFormat": "raw",
+    "id": "a13d9931-f1ee-4908-b3e4-5e3c492735eb",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.9 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-21T12:28:49Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "fec8b8b7c181e1276e690a629214979f50f67b4a43c993552bf31f182c267263b51df93c87c37e07d1c268d40d31f3e29cf966347e786d051f74d1146dc4ba48"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.4"
+    },
+    "createdAt": "2024-11-21T11:18:35Z",
+    "diskFormat": "raw",
+    "id": "23606c6a-a838-4a34-a771-46e92fd3a350",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.4 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-22T11:14:19Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "e31cac81b251e63d2f89c324d1822340ba7a583d0c218f35b96a2a481836ceaf1595ee8fc12feafaed13ffc705002db1ae9927108622e6dcc891c827c11804b7"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.4",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-21T11:18:10Z",
+    "diskFormat": "raw",
+    "id": "94d17fd5-6591-42c0-bb59-997ca04f562c",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9.4",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:51:49Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "486c122bf2f6a578e966b18000fce2625e0ca5280c080e561931f619d4726c29063b5fec9a671fd5b3b0779bb7b601aaaaad09494007f6b2c63f1ba165fe8bc1"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8.9",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-21T11:10:39Z",
+    "diskFormat": "raw",
+    "id": "15f12bfb-ed5f-4786-934c-b09a59b830c7",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8.9",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:52:51Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "a01fe522c969e7c2107b4db1c5c404395cbef25e038e8f6b655af16699032eb88cba13a1da6e48c385975a20b5dc4668a5a253019cb58bb2206b91b9beb2f400"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8"
+    },
+    "createdAt": "2024-11-20T13:49:59Z",
+    "diskFormat": "raw",
+    "id": "432b7e2c-c7ec-4569-b2af-503225aa22fe",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-20T14:24:26Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "59733333b4c055a1b56d48d81873ac14a1a961bd8a1c2ec9d537a8298c8a52443c3cea05234eae0d6986f669eecbddb267d4555e0c40ccb0f8b051e981259d1f"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "8",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-20T13:11:01Z",
+    "diskFormat": "raw",
+    "id": "373f1ef2-9c60-4171-a242-31849a08c09f",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 8",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:53:36Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "29e4092f65133e68d2e2c0f8b0b23d8643d5778629427c98715e14df01d635c96b348cd3d9b035c3a380fe6878a9c58bfacfc5030908f01148d9c9a8b7e8d5f9"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rocky-linux",
+      "operatingSystemVersion": "9",
+      "uefi": true
+    },
+    "createdAt": "2024-11-19T23:09:22Z",
+    "diskFormat": "raw",
+    "id": "c4455291-0c37-4ee5-91e9-a3fe1d5c115c",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "Rocky Linux 9",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:47:41Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "c0f4a5de30cb3da99ea13c24b5be3b828a7e46a46d2010e2264384ac34f88572df1960aa8941311b99fd951d31fccece207f0bfc4f5a9123b37b0c127d34f409"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rocky-linux-arm64",
+      "operatingSystemVersion": "9",
+      "uefi": true
+    },
+    "createdAt": "2024-11-19T23:08:27Z",
+    "diskFormat": "raw",
+    "id": "aac1c69c-f165-499f-a62f-40818f94bd55",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "Rocky Linux 9 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-12-05T13:55:09Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "40013fdfb8294f29ca95778cd10920a94e2d17c945edcaeeb29d6831bab0b11ce9edfff15b8b9d046b3dfe8c79f9b96f3e4e409441e375e12be7c68e404f8fc4"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel",
+      "operatingSystemVersion": "9.5",
+      "secureBoot": true,
+      "uefi": true
+    },
+    "createdAt": "2024-11-19T11:42:05Z",
+    "diskFormat": "raw",
+    "id": "874eaed9-fd9e-4190-962f-333057e58c13",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:52:41Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "ae0713b5d9826625fa42a3debcdd45ea3b7620ff70b6503b89ec7fdef995b97373b6e105a3976fcd71e4a37e9469291d5e3d5c4b209bf40cd8a198c1ecd52734"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "almalinux",
+      "operatingSystemVersion": "8",
+      "uefi": true
+    },
+    "createdAt": "2024-08-20T22:47:06Z",
+    "diskFormat": "raw",
+    "id": "6b2e763e-24ff-4ee9-a9e3-511b1e940f5d",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "AlmaLinux 8",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:45:43Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "30b6bb34a024cc12edc42b68818cca8eb6b4e7e8a964667303d4e5d344606a2825e3bfc2d319da57aeeef226024ec2b35b9b7324a41ba5f7337e90721c6a2e51"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rocky-linux",
+      "operatingSystemVersion": "8",
+      "uefi": true
+    },
+    "createdAt": "2024-05-31T22:58:12Z",
+    "diskFormat": "raw",
+    "id": "4008ff01-09de-4809-b40d-659ae3c00b6f",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 10,
+    "minRam": 0,
+    "name": "Rocky Linux 8",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 10737418240,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:47:32Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "716a1efbb1199bca4bf5369676ee5431afcd5ca579217e326d447010f3a54332f73f6d47f9ee568bfc86e1a18983d1617219e3be7505af55cf4e8241f1469eab"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "fedora",
+      "operatingSystemVersion": "40",
+      "uefi": true
+    },
+    "createdAt": "2024-05-31T11:03:13Z",
+    "diskFormat": "raw",
+    "id": "acdb9336-28ef-4f9d-9c5a-444ac7be729a",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 5,
+    "minRam": 0,
+    "name": "Fedora 40",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 5368709120,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:48:52Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "8f6bf240f6cec2fd3da6d55adec653aa63f4d61769043ebf027990b0a360a895a26060ad16e9a59fe6b94ec01225a863b1c9a5aa5874ca8df87936ce1c21c52e"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "rhel-arm64",
+      "operatingSystemVersion": "9.4"
+    },
+    "createdAt": "2024-05-14T12:48:09Z",
+    "diskFormat": "raw",
+    "id": "638f7a87-0d32-4b5b-8a31-dc7342feeaeb",
+    "labels": {
+      "ARM64": "",
+      "dev": "",
+      "linux": "",
+      "nvidia-gpu-supported": "",
+      "prod": "",
+      "qa": "",
+      "rhel": ""
+    },
+    "minDiskSize": 20,
+    "minRam": 1536,
+    "name": "Red Hat Enterprise Linux 9 ARM64",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 21474836480,
+    "status": "AVAILABLE",
+    "updatedAt": "2024-11-19T14:43:53Z"
+  },
+  {
+    "checksum": {
+      "algorithm": "sha512",
+      "digest": "18c1f7f3b7b0232ae01ba402601eca8dd1a01ef809c67ed928db35068e77b7204270b0b52b19caf8a607798a68d8922bd46309c255ee9906cb991909c4a3f797"
+    },
+    "config": {
+      "operatingSystem": "linux",
+      "operatingSystemDistro": "ubuntu",
+      "operatingSystemVersion": "18.04",
+      "uefi": true,
+      "videoModel": "vga"
+    },
+    "createdAt": "2023-06-07T22:05:43Z",
+    "diskFormat": "raw",
+    "id": "6fc9de7f-c230-4311-b659-16245a82e407",
+    "labels": {
+      "STACKITServerAgent": "",
+      "dev": "",
+      "linux": "",
+      "prod": "",
+      "qa": "",
+      "unmanaged": ""
+    },
+    "minDiskSize": 3,
+    "minRam": 0,
+    "name": "Ubuntu 18.04",
+    "owner": "a5cbb23a-b7e0-40fb-a3f6-3f9009f9cf94",
+    "protected": false,
+    "scope": "public",
+    "size": 2361393152,
+    "status": "AVAILABLE",
+    "updatedAt": "2025-01-09T11:58:10Z"
+  }
+]

@@ -46,8 +46,7 @@ Follow these steps to generate a Personal Access Token and use it with STACKIT's
 For all available images see [images.json](images.json), or use:
 
 ```shell
-PROJECT_ID=00000000-0000-0000-0000-000000000000 # Set you project ID
-stackit curl https://iaas.api.eu01.stackit.cloud/v1beta1/projects/$PROJECT_ID/images
+stackit image list
 ```
 
 ## Server Types
