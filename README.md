@@ -1,3 +1,10 @@
+<!-- markdownlint-disable first-line-h1 no-inline-html -->
+
+> [!NOTE]
+> This repository is publicly accessible, but some links, such as those to the [STACKIT Confluence Space], point to internal CLOUDETEER resources and will not be accessible to the public.
+
+---
+
 # playground-stackit
 
 [![STACKIT Confluence Shield]][STACKIT Confluence Space]
