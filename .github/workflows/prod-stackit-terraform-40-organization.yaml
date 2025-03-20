@@ -30,7 +30,7 @@ jobs:
       terraform-force-unlock-id: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock-id }}
       terraform-force-unlock: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock }}
       env: |-
-        TF_VAR_stackit_organization: ${{ vars.CDT_LAUNCHPAD_STACKIT_ORGANIZATION_ID }}
+        TF_VAR_organization_id: ${{ vars.CDT_LAUNCHPAD_STACKIT_ORGANIZATION_ID }}
     secrets:
       stackit_service_account_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_SERVICE_ACCOUNT_KEY }}
       backend_s3_secret_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_BACKEND_SECRET_ACCESS_KEY }}
