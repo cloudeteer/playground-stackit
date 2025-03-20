@@ -1,0 +1,37 @@
+name: prod-stackit-terraform-team-iac-test01
+
+on:
+  workflow_dispatch:
+    inputs:
+      terraform-force-unlock:
+        default: false
+        description: Terraform force unlock
+        required: false
+        type: boolean
+      terraform-force-unlock-id:
+        description: Terraform LOCK_ID
+        required: false
+        type: string
+  pull_request:
+    paths:
+      - prod-stackit/terraform/40_organization/**
+      - .github/workflows/prod-stackit-terraform-40-organization.yaml
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  terraform:
+    name: Terraform
+    uses: cloudeteer/iac-deployment-framework/.github/workflows/terraform-deploy-stackit.yaml@wip/stackit
+    with:
+      directory: prod-stackit/terraform/40_organization
+      terraform-force-unlock-id: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock-id }}
+      terraform-force-unlock: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock }}
+      env: |-
+        TF_VAR_stackit_organization: ${{ vars.CDT_LAUNCHPAD_STACKIT_ORGANIZATION_ID }}
+    secrets:
+      stackit_service_account_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_SERVICE_ACCOUNT_KEY }}
+      backend_s3_secret_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_BACKEND_SECRET_ACCESS_KEY }}
+      backend_s3_access_key: ${{ secrets.CDT_LAUNCHPAD_STACKIT_BACKEND_ACCESS_KEY }}
