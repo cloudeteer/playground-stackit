@@ -8,7 +8,7 @@ terraform {
     }
     stackit = {
       source  = "stackitcloud/stackit"
-      version = "~> 0.44"
+      version = "0.46.0"
     }
     tls = {
       source  = "hashicorp/tls"

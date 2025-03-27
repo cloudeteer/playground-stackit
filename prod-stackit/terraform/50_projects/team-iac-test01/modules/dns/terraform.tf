@@ -2,9 +2,13 @@ terraform {
   required_version = "~> 1.8"
 
   required_providers {
+    openstack = {
+      source  = "terraform-provider-openstack/openstack"
+      version = "~> 3.0"
+    }
     stackit = {
       source  = "stackitcloud/stackit"
-      version = "0.44.0"
+      version = "0.46.0"
     }
     cloudinit = {
       source  = "hashicorp/cloudinit"
