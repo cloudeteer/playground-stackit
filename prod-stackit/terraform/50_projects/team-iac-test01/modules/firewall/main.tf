@@ -2,24 +2,30 @@
 # Therefore, the OpenStack Terraform provider is used instead. However, please note that the OpenStack API at STACKIT is deprecated.
 #
 resource "openstack_images_image_v2" "this" {
-  name = "pfsense-ce-2.7.2-amd64-10-12-2024"
+  name = "pfsense-ce-2.7.2-amd64-10-12-2024_openstack_images_image_v2"
 
-  image_source_url = "https://pfsense.object.storage.eu01.onstackit.cloud/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
-  image_cache_path = "${path.root}/.terraform/image_cache"
+  # Option 1: Download image during deployment
+  # Uncomment the following lines to download the image from a URL during deployment
+  # image_source_url = "https://pfsense.object.storage.eu01.onstackit.cloud/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
+  # image_cache_path = "${path.root}/.terraform/image_cache"
+  # web_download     = true
+
+  # Option 2: Use pre-downloaded image
+  # Specify the local file path to use a pre-downloaded image
+  local_file_path = "${path.module}/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
 
   container_format = "bare"
   disk_format      = "qcow2"
   visibility       = "shared"
-  web_download     = true
 }
 
 # resource "stackit_image" "this" { ## !! DOES NOT WORK // STACKIT Support Case SSD-6984
 #   project_id = var.project_id
 #   labels     = merge(var.labels)
 
-#   name            = "pfsense-ce-2.7.2-amd64-10-12-2024"
+#   name            = "pfsense-ce-2.7.2-amd64-10-12-2024_stackit_image"
 #   disk_format     = "qcow2"
-#   local_file_path = "pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
+#   local_file_path = "${path.module}/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
 
 #   config = {}
 # }
