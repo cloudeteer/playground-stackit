@@ -18,6 +18,7 @@ To create a new project using Terraform, follow these steps:
 2. Create the necessary Terraform configuration files:
    - `terraform.tf`
    - `providers.tf`
+   - `variables.tf`
 
 ### Quick Start Configuration
 
@@ -78,6 +79,21 @@ provider "stackit" {
 
   # Enable beta resources.
   enable_beta_resources = true
+}
+```
+
+`variables.tf`
+
+```hcl
+variable "stackit_service_account_key" {
+  type      = string
+  sensitive = true
+}
+
+variable "stackit_service_account_private_key" {
+  type      = string
+  default   = null
+  sensitive = true
 }
 ```
 
