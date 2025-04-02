@@ -1,0 +1,14 @@
+apiVersion: v2
+name: secrets
+description: use stackit secrets manager with external secrets
+type: application
+version: 1.0.0
+maintainers:
+  - name: cloudeteer
+    email: go@cloudeteer.de
+    url: https://cloudeteer.de
+
+dependencies:
+  - name: external-secrets
+    version: 0.15.1
+    repository: https://charts.external-secrets.io
