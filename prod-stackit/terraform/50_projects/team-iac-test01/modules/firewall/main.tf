@@ -27,7 +27,10 @@ resource "stackit_image" "this" { ## !! DOES NOT WORK // STACKIT Support Case SS
   disk_format     = "qcow2"
   local_file_path = "${path.module}/pfsense-ce-2.7.2-amd64-10-12-2024.qcow2"
 
-  config = {}
+  config = {
+    # UEFI must be disabled for this image to boot correctly
+    uefi = false
+  }
 }
 
 resource "stackit_server" "this" {
