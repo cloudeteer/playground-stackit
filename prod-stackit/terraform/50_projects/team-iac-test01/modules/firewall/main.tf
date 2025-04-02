@@ -44,8 +44,7 @@ resource "stackit_server" "this" {
   boot_volume = {
     size                  = 8
     source_type           = "image"
-    source_id             = openstack_images_image_v2.this.id
-    # source_id             = stackit_image.this.image_id
+    source_id             = stackit_image.this.image_id
     delete_on_termination = true
     performance_class     = "storage_premium_perf0"
   }
