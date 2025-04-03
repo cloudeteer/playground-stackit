@@ -113,58 +113,58 @@ resource "stackit_security_group_rule" "lan" {
   ether_type = "IPv4"
 }
 
-# resource "stackit_server_backup_schedule" "hourly" {
-#   project_id = var.project_id
-#   server_id  = stackit_server.this.server_id
+resource "stackit_server_backup_schedule" "hourly" {
+  project_id = var.project_id
+  server_id  = stackit_server.this.server_id
 
-#   enabled = true
-#   name    = "hourly"
-#   rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=HOURLY;INTERVAL=1"
+  enabled = true
+  name    = "hourly"
+  rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=HOURLY;INTERVAL=1"
 
-#   backup_properties = {
-#     name             = "hourly"
-#     retention_period = 1
-#   }
-# }
+  backup_properties = {
+    name             = "hourly"
+    retention_period = 1
+  }
+}
 
-# resource "stackit_server_backup_schedule" "daily" {
-#   project_id = var.project_id
-#   server_id  = stackit_server.this.server_id
+resource "stackit_server_backup_schedule" "daily" {
+  project_id = var.project_id
+  server_id  = stackit_server.this.server_id
 
-#   enabled = true
-#   name    = "daily"
-#   rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=DAILY;INTERVAL=1"
+  enabled = true
+  name    = "daily"
+  rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=DAILY;INTERVAL=1"
 
-#   backup_properties = {
-#     name             = "daily"
-#     retention_period = 7
-#   }
-# }
+  backup_properties = {
+    name             = "daily"
+    retention_period = 7
+  }
+}
 
-# resource "stackit_server_backup_schedule" "weekly" {
-#   project_id = var.project_id
-#   server_id  = stackit_server.this.server_id
+resource "stackit_server_backup_schedule" "weekly" {
+  project_id = var.project_id
+  server_id  = stackit_server.this.server_id
 
-#   enabled = true
-#   name    = "weekly"
-#   rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=WEEKLY;INTERVAL=1"
+  enabled = true
+  name    = "weekly"
+  rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=WEEKLY;INTERVAL=1"
 
-#   backup_properties = {
-#     name             = "weekly"
-#     retention_period = (7 * 5)
-#   }
-# }
+  backup_properties = {
+    name             = "weekly"
+    retention_period = (7 * 5)
+  }
+}
 
-# resource "stackit_server_backup_schedule" "monthly" {
-#   project_id = var.project_id
-#   server_id  = stackit_server.this.server_id
+resource "stackit_server_backup_schedule" "monthly" {
+  project_id = var.project_id
+  server_id  = stackit_server.this.server_id
 
-#   enabled = true
-#   name    = "monthly"
-#   rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=MONTHLY;INTERVAL=1"
+  enabled = true
+  name    = "monthly"
+  rrule   = "DTSTART;TZID=Europe/Berlin:19700101T000000 RRULE:FREQ=MONTHLY;INTERVAL=1"
 
-#   backup_properties = {
-#     name             = "monthly"
-#     retention_period = (31 * 3)
-#   }
-# }
+  backup_properties = {
+    name             = "monthly"
+    retention_period = (31 * 3)
+  }
+}
