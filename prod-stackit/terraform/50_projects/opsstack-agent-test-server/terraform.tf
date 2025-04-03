@@ -11,7 +11,7 @@ terraform {
   backend "s3" {
     bucket = "opsstackagentconfig"
     region = "eu01"
-    key    = "prod-stackit/terraform/opsstack-agent-test/terraform.tfstate"
+    key    = "prod-stackit/terraform/50_project/opsstack-agent-test/terraform.tfstate"
 
     endpoints = {
       s3 = "https://object.storage.eu01.onstackit.cloud"
