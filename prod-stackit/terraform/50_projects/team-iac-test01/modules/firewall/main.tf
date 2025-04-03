@@ -139,6 +139,9 @@ resource "stackit_server_backup_schedule" "daily" {
     name             = "daily"
     retention_period = 7
   }
+
+  # Workaround – see https://github.com/stackitcloud/terraform-provider-stackit/issues/760
+  depends_on = [stackit_server_backup_schedule.hourly]
 }
 
 resource "stackit_server_backup_schedule" "weekly" {
@@ -153,6 +156,9 @@ resource "stackit_server_backup_schedule" "weekly" {
     name             = "weekly"
     retention_period = (7 * 5)
   }
+
+  # Workaround – see https://github.com/stackitcloud/terraform-provider-stackit/issues/760
+  depends_on = [stackit_server_backup_schedule.hourly]
 }
 
 resource "stackit_server_backup_schedule" "monthly" {
@@ -167,4 +173,7 @@ resource "stackit_server_backup_schedule" "monthly" {
     name             = "monthly"
     retention_period = (31 * 3)
   }
+
+  # Workaround – see https://github.com/stackitcloud/terraform-provider-stackit/issues/760
+  depends_on = [stackit_server_backup_schedule.hourly]
 }
