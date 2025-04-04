@@ -13,9 +13,11 @@ resource "null_resource" "delete_security_group_rules" {
     interpreter = ["bash", "-ec"]
 
     command = join("; ", [
-      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > ${path.cwd}/key.json",
-      "stackit auth activate-service-account --service-account-key-path ${path.cwd}/key.json",
-      "rm ${path.cwd}/key.json",
+      "tmpfile=$(mktemp)",
+      "chmod 600 \"$tmpfile\"",
+      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > \"$tmpfile\"",
+      "stackit auth activate-service-account --service-account-key-path \"$tmpfile\"",
+      "shred --remove \"$tmpfile\"", # Note: On macOS, install coreutils to enable the `shred` command (e.g., via `brew install coreutils`)
       join(" | ", [
         format(
           "stackit curl https://iaas.api.eu01.stackit.cloud/v1/projects/%s/security-groups/%s/rules",
