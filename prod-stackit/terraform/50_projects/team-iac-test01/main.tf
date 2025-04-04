@@ -1,4 +1,21 @@
 #
+# STACKIT Project
+#
+
+resource "stackit_resourcemanager_project" "this" {
+  count = local.any_feature_enabled ? 1 : 0
+
+  name                = "team-iac-test01"
+  parent_container_id = "965b1adb-f3f9-4f46-9ee4-bc05682afe72" # Org: CLOUDETEER GmbH / Folder: Chapter OE
+  owner_email         = jsondecode(var.stackit_service_account_key)["credentials"]["iss"]
+
+  labels = {
+    "ephemeral"   = "true"
+    "networkArea" = data.stackit_network_area.this.network_area_id
+  }
+}
+
+#
 # DNS
 #
 
@@ -8,7 +25,7 @@ module "dns" {
   count = var.features.dns ? 1 : 0
 
   labels       = local.labels
-  project_id   = one(data.stackit_resourcemanager_project.this[*].project_id)
+  project_id   = one(stackit_resourcemanager_project.this[*].project_id)
   keypair_name = one(stackit_key_pair.default[*].name)
 
   debug = false
@@ -24,7 +41,7 @@ module "empty_security_group" {
   count = var.features.empty_security_group ? 1 : 0
 
   labels     = local.labels
-  project_id = one(data.stackit_resourcemanager_project.this[*].project_id)
+  project_id = one(stackit_resourcemanager_project.this[*].project_id)
 }
 
 #
@@ -38,7 +55,7 @@ module "firewall" {
 
   ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
   labels           = local.labels
-  project_id       = one(data.stackit_resourcemanager_project.this[*].project_id)
+  project_id       = one(stackit_resourcemanager_project.this[*].project_id)
 }
 
 #
@@ -53,7 +70,7 @@ module "load_balancer" {
   ipv4_nameservers = length(module.dns) == 1 ? module.dns[0].ipv4_nameservers : local.fallback_nameserver
   keypair_name     = one(stackit_key_pair.default[*].name)
   labels           = local.labels
-  project_id       = one(data.stackit_resourcemanager_project.this[*].project_id)
+  project_id       = one(stackit_resourcemanager_project.this[*].project_id)
 
   backend_server_count                   = 3
   backend_server_backup_schedule_enabled = false
