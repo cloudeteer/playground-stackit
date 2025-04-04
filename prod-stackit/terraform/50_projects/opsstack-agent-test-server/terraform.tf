@@ -9,7 +9,7 @@ terraform {
   # Terraform Remote State Backend Configuration
   # https://developer.hashicorp.com/terraform/language/backend/s3#configuration
   backend "s3" {
-    bucket = "opsstackagentconfig"
+    bucket = "launchpad"
     region = "eu01"
     key    = "prod-stackit/terraform/50_project/opsstack-agent-test/terraform.tfstate"
 
