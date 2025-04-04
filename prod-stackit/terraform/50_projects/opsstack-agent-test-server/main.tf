@@ -119,9 +119,11 @@ exec bash linux-${var.agent_version}.sh
     # wait a minute for the server agent to be online
     command = join("; ", [
       "sleep 60s",
-      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > ${path.cwd}/key.json",
-      "stackit auth activate-service-account --service-account-key-path ${path.cwd}/key.json",
-      "rm ${path.cwd}/key.json",
+      "tmpfile=$(mktemp)",
+      "chmod 600 \"$tmpfile\"",
+      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > \"$tmpfile\"",
+      "stackit auth activate-service-account --service-account-key-path \"$tmpfile\"",
+      "shred --remove \"$tmpfile\"", # Note: On macOS, install coreutils to enable the `shred` command (e.g., via `brew install coreutils`)
         format(
           "stackit curl -X POST https://run-command.api.eu01.stackit.cloud/v1/projects/%s/servers/%s/commands --data ${jsonencode(self.triggers.body)}",
           data.stackit_resourcemanager_project.this.project_id,
