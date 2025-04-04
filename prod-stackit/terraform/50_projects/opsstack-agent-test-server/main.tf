@@ -36,16 +36,16 @@ data "cloudinit_config" "agent_test" {
     content = file("${path.module}/assets/install_stackit_agent.sh")
   }
 
-  #part {
-  #  filename     = "download_opsstack_agent_setup.sh"
-  #  content_type = "text/x-shellscript"
+  part {
+    filename     = "download_opsstack_agent_setup.sh"
+    content_type = "text/x-shellscript"
 
-  #  content = templatefile("${path.module}/assets/download_opsstack_agent_setup.tftpl", {
-  #    deepview_url = var.deepview_url
-  #    agent_version = var.agent_version
-  #    agent_login = var.agent_login
-  #  })
-  #}
+    content = templatefile("${path.module}/assets/download_opsstack_agent_setup.tftpl", {
+      deepview_url = var.deepview_url
+      agent_version = var.agent_version
+      agent_login = var.agent_login
+    })
+  }
 
 }
 resource "stackit_network" "agent_test" {
@@ -87,50 +87,50 @@ resource "stackit_server_network_interface_attach" "agent_test" {
 }
 
 
-resource "null_resource" "run_agent_install_script" {
-  triggers = {
-    body = jsonencode({
-      commandTemplateName = "RunShellScript"
-      parameters = {
-        script    = <<-EOT
-#!/bin/bash
-
-set -eo pipefail
-    retryCount=0
-    while ! curl -H "Authorization: Basic ${var.agent_login}" --fail --fail-early -sSL "https://${var.deepview_url}/opsstack-agent/install/linux-${var.agent_version}.sh" -o linux-${var.agent_version}.sh; do
-        retryCount=$((retryCount+1))
-
-        if [ "$${retryCount}" -eq 100 ]; then
-            echo "Request to $1 failed. Exiting" >&2
-            exit 1
-        fi
-        echo "Request to $1 failed. Retrying in $((retryCount*2)) seconds"  >&2
-        sleep $((retryCount*2));
-    done
-
-exec bash linux-${var.agent_version}.sh
-        EOT
-      }
-    })
-  }
-
-  provisioner "local-exec" {
-    interpreter = ["bash", "-ec"]
-    # wait a minute for the server agent to be online
-    command = join("; ", [
-      "sleep 60s",
-      "tmpfile=$(mktemp)",
-      "chmod 600 \"$tmpfile\"",
-      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > \"$tmpfile\"",
-      "stackit auth activate-service-account --service-account-key-path \"$tmpfile\"",
-      "shred --remove \"$tmpfile\"", # Note: On macOS, install coreutils to enable the `shred` command (e.g., via `brew install coreutils`)
-        format(
-          "stackit curl -X POST https://run-command.api.eu01.stackit.cloud/v1/projects/%s/servers/%s/commands --data ${jsonencode(self.triggers.body)}",
-          data.stackit_resourcemanager_project.this.project_id,
-          stackit_server.agent_test.server_id
-        )
-      ,
-      "stackit auth logout"
-    ])
-  }
-}
+#resource "null_resource" "run_agent_install_script" {
+#  triggers = {
+#    body = jsonencode({
+#      commandTemplateName = "RunShellScript"
+#      parameters = {
+#        script    = <<-EOT
+##!/bin/bash
+#
+#set -eo pipefail
+#    retryCount=0
+#    while ! curl -H "Authorization: Basic ${var.agent_login}" --fail --fail-early -sSL "https://${var.deepview_url}/opsstack-agent/install/linux-${var.agent_version}.sh" -o linux-${var.agent_version}.sh; do
+#        retryCount=$((retryCount+1))
+#
+#        if [ "$${retryCount}" -eq 100 ]; then
+#            echo "Request to $1 failed. Exiting" >&2
+#            exit 1
+#        fi
+#        echo "Request to $1 failed. Retrying in $((retryCount*2)) seconds"  >&2
+#        sleep $((retryCount*2));
+#    done
+#
+#exec bash linux-${var.agent_version}.sh
+#        EOT
+#      }
+#    })
+#  }
+#
+#  provisioner "local-exec" {
+#    interpreter = ["bash", "-ec"]
+#    # wait a minute for the server agent to be online
+#    command = join("; ", [
+#      "sleep 60s",
+#      "tmpfile=$(mktemp)",
+#      "chmod 600 \"$tmpfile\"",
+#      "printf '%s' \"$TF_VAR_stackit_service_account_key\" > \"$tmpfile\"",
+#      "stackit auth activate-service-account --service-account-key-path \"$tmpfile\"",
+#      "shred --remove \"$tmpfile\"", # Note: On macOS, install coreutils to enable the `shred` command (e.g., via `brew install coreutils`)
+#        format(
+#          "stackit curl -X POST https://run-command.api.eu01.stackit.cloud/v1/projects/%s/servers/%s/commands --data ${jsonencode(self.triggers.body)}",
+#          data.stackit_resourcemanager_project.this.project_id,
+#          stackit_server.agent_test.server_id
+#        )
+#      ,
+#      "stackit auth logout"
+#    ])
+#  }
+#}
