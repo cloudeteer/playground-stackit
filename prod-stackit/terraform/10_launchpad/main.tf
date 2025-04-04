@@ -21,7 +21,7 @@ resource "stackit_server" "launchpad" {
 
   availability_zone = "eu01-1" # eu01-1, eu01-2, eu03-3, eu01-m (Metro Zone is not available for ARM machine types)
   keypair_name      = stackit_key_pair.launchpad.name
-  user_data         = cloudinit_config.launchpad.rendered
+  user_data         = data.cloudinit_config.launchpad.rendered
 }
 
 resource "tls_private_key" "launchpad" {
@@ -33,7 +33,7 @@ resource "stackit_key_pair" "launchpad" {
   public_key = chomp(tls_private_key.launchpad.public_key_openssh)
 }
 
-resource "cloudinit_config" "launchpad" {
+data "cloudinit_config" "launchpad" {
   gzip          = false
   base64_encode = false
 
