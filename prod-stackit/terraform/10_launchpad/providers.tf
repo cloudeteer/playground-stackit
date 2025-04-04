@@ -17,5 +17,3 @@ provider "stackit" {
   # Enable beta resources.
   enable_beta_resources = true
 }
-
-# These variables are mandatory and used on the provider configuration above.
