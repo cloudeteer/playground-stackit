@@ -15,6 +15,19 @@ resource "stackit_resourcemanager_project" "this" {
   }
 }
 
+resource "stackit_authorization_project_role_assignment" "this" {
+  for_each = local.any_feature_enabled ? toset([
+    "al@cloudeteer.de",
+    "pth@cloudeteer.de",
+    "rs@cloudeteer.de",
+    "se@cloudeteer.de",
+  ]) : []
+
+  resource_id = stackit_resourcemanager_project.this[0].project_id
+  role        = "owner"
+  subject     = each.value
+}
+
 #
 # DNS
 #

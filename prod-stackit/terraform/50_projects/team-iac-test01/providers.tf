@@ -17,4 +17,7 @@ provider "stackit" {
 
   # Enable beta resources.
   enable_beta_resources = true
+
+  # Enable experimental features
+  experiments = ["iam"]
 }
