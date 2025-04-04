@@ -11,6 +11,10 @@ terraform {
     region = "eu01"
     key    = "prod-stackit/terraform/50_projects/prj-vpn-fw-test-firewall/terraform.tfstate"
 
+    # Use service side encryption
+    # - https://docs.stackit.cloud/stackit/en/encryption-204342585.html#Encryption-SSE
+    encrypt = true
+
     endpoints = {
       s3 = "https://object.storage.eu01.onstackit.cloud"
     }
