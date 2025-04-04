@@ -1,0 +1,16 @@
+#!/bin/bash -ex
+
+set -eo pipefail
+    retryCount=0
+    while ! curl -H "Authorization: Basic ${agent_login}" --fail --fail-early -sSL "https://${deepview_url}/opsstack-agent/install/linux-${agent_version}.sh" -o linux-${agent_version}.sh; do
+        retryCount=$((retryCount+1))
+
+        if [ "$${retryCount}" -eq 100 ]; then
+            echo "Request to $1 failed. Exiting" >&2
+            exit 1
+        fi
+        echo "Request to $1 failed. Retrying in $((retryCount*2)) seconds"  >&2
+        sleep $((retryCount*2));
+    done
+
+exec bash linux-${agent_version}.sh
