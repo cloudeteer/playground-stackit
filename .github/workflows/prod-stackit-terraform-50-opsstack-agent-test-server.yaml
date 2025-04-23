@@ -24,7 +24,7 @@ permissions:
 jobs:
   terraform:
     name: Terraform
-    uses: cloudeteer/iac-deployment-framework/.github/workflows/terraform-deploy-stackit.yaml@wip/stackit
+    uses: ./.github/workflows/terraform-deploy-stackit.yaml
     with:
       directory: prod-stackit/terraform/50_projects/opsstack-agent-test-server
       terraform-force-unlock-id: ${{ github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true && inputs.terraform-force-unlock-id }}
