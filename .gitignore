@@ -49,5 +49,4 @@ openrc
 key.json
 
 # Ignore volume images stored locally
-*.qcow2
 *.raw
