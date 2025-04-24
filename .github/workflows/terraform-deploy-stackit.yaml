@@ -1,0 +1,164 @@
+name: deploy
+
+on:
+  workflow_call:
+    inputs:
+      directory:
+        type: string
+        required: true
+      terraform-force-unlock:
+        default: false
+        description: Terraform force unlock
+        required: false
+        type: boolean
+      terraform-force-unlock-id:
+        description: Terraform LOCK_ID
+        required: false
+        type: string
+      env:
+        required: false
+        type: string
+      environment:
+        required: false
+        type: string
+        default: prod-stackit
+    secrets:
+      env:
+        required: false
+      stackit_service_account_key:
+        required: true
+      backend_s3_secret_key:
+        required: true
+      backend_s3_access_key:
+        required: true
+
+env:
+  # StackIT
+  TF_VAR_stackit_service_account_key: ${{ secrets.stackit_service_account_key }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.backend_s3_access_key }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.backend_s3_secret_key }}
+
+  # Working directory
+  CDT_IAC_WORKING_DIRECTORY: ${{ inputs.directory }}
+
+  # Terraform Paramaters
+  TF_IN_AUTOMATION: true
+  TF_INPUT: false
+  TF_VERSION: ~1.10.0
+
+  # https://developer.hashicorp.com/terraform/cli/commands#upgrade-and-security-bulletin-checks
+  CHECKPOINT_DISABLE: true
+
+concurrency:
+  group: ${{ github.workflow }}
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  plan:
+    name: Plan
+    environment: ${{ inputs.environment }} (plan)
+    runs-on: ubuntu-latest
+    outputs:
+      exitcode: ${{ steps.plan.outputs.exitcode }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cache Setup
+        uses: actions/cache@v4
+        with:
+          key: iac-deployment-framework:~/${{ env.CDT_IAC_WORKING_DIRECTORY }}#${{ hashFiles(format('{0}/{1}', env.CDT_IAC_WORKING_DIRECTORY, '/.terraform.lock.hcl')) }}@${{ runner.os }}
+          path: |
+            ${{ env.CDT_IAC_WORKING_DIRECTORY }}/.terraform
+      - name: Set environment variables from input
+        uses: cloudeteer/actions/set-env@main
+        with:
+          env: ${{ inputs.env }}
+      - name: Set environment variables from secrets
+        uses: cloudeteer/actions/set-env@main
+        with:
+          env: ${{ secrets.env }}
+      - name: Terraform Setup
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
+      - name: Terraform Init
+        working-directory: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+        run: terraform init
+      - name: Terraform State Force-Unlock
+        if: github.event_name == 'workflow_dispatch' && inputs.terraform-force-unlock == true
+        working-directory: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+        env:
+          LOCK_ID: ${{ inputs.terraform-force-unlock-id }}
+        run: |
+          if [ -z "$LOCK_ID" ]; then
+            echo "::debug::Workflow input 'terraform-force-unlock-id' is empty. Please provide a valid Terraform LOCK_ID."
+            exit 1
+          fi
+          terraform force-unlock -force "$LOCK_ID"
+          echo "::notice::Terraform state file successfully unlocked."
+      - name: Terraform Plan
+        id: plan
+        working-directory: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+        run: |
+          set +e
+          terraform plan -out terraform.tfplan -detailed-exitcode
+          exitcode=$?
+          [ "$exitcode" -ne 2 ] && [ "$exitcode" -ne 0 ] && exit $exitcode
+          echo "exitcode=$exitcode" >> $GITHUB_OUTPUT
+      - name: Upload Artifact terraform.tfplan
+        uses: actions/upload-artifact@v4
+        with:
+          name: terraform.tfplan
+          path: ${{ env.CDT_IAC_WORKING_DIRECTORY }}/terraform.tfplan
+      - name: Print status
+        run: |
+          if [ "${{ github.event.pull_request.draft }}" = "false" ] ; then
+            echo "::notice::The GitHub pull request that triggered this action is in draft status. As a result, the next apply step will be skipped."
+          fi
+
+          if [ "${{ steps.plan.outputs.exitcode }}" == "0" ] ; then
+            echo "::notice::No changes. Your infrastructure matches the configuration."
+          fi
+  apply:
+    if: ${{ !cancelled() && !failure() && github.event.pull_request.draft == false && needs.plan.outputs.exitcode == 2 }}
+    name: Apply
+    needs: plan
+    environment: ${{ inputs.environment }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cache Setup
+        uses: actions/cache@v4
+        with:
+          key: iac-deployment-framework:~/${{ env.CDT_IAC_WORKING_DIRECTORY }}#${{ hashFiles(format('{0}/{1}', env.CDT_IAC_WORKING_DIRECTORY, '/.terraform.lock.hcl')) }}@${{ runner.os }}
+          path: |
+            ${{ env.CDT_IAC_WORKING_DIRECTORY }}/.terraform
+      - name: Set environment variables from input
+        uses: cloudeteer/actions/set-env@main
+        with:
+          env: ${{ inputs.env }}
+      - name: Set environment variables from secrets
+        uses: cloudeteer/actions/set-env@main
+        with:
+          env: ${{ secrets.env }}
+      - name: Terraform Setup
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
+      - name: Download Artifact terraform.tfplan
+        uses: actions/download-artifact@v4
+        with:
+          name: terraform.tfplan
+          path: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+      - name: Terraform Init
+        working-directory: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+        run: terraform init
+      - name: Terraform Apply
+        working-directory: ${{ env.CDT_IAC_WORKING_DIRECTORY }}
+        run: terraform apply terraform.tfplan
