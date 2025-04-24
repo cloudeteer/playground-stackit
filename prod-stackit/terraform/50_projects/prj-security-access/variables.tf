@@ -16,7 +16,7 @@ variable "features" {
     firewall = optional(bool, false)
     load_balancer = optional(bool, false)
     secret_manager = optional(bool, false)
-    github_runner = optional(bool, false)
+    github_runner = optional(bool, true)
   })
 
   default = {}
