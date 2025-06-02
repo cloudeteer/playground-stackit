@@ -1,0 +1,20 @@
+apiVersion: v2
+name: stackit-open-ziti
+description: use openziti with ske in stackit
+type: application
+version: 1.0.0
+maintainers:
+  - name: cloudeteer
+    email: go@cloudeteer.de
+    url: https://cloudeteer.de
+
+dependencies:
+  - name: ziti-controller
+    version: 1.3.4
+    repository: https://docs.openziti.io/helm-charts
+  - name: ziti-router
+    version: 1.3.0
+    repository: https://docs.openziti.io/helm-charts
+  - name: ziti-host
+    version: 0.4.11
+    repository: https://docs.openziti.io/helm-charts
