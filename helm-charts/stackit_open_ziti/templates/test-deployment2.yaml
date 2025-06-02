@@ -1,0 +1,58 @@
+# /tmp/sidecar-demo.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ziti-tunnel-sidecar-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ziti-tunnel-sidecar-demo
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: ziti-tunnel-sidecar-demo
+    spec:
+      containers:
+        - image: stedolan/jq
+          name: testclient
+          command:
+            - sh
+            - -c
+            - |
+              while true; do
+                set -x
+                wget --quiet \
+                  --output-document=- \
+                  --post-data ziti=awesome \
+                  http://testapi.ziti/post \
+                | jq .data
+                set +x
+                sleep 3
+              done
+        - image: openziti/ziti-tunnel
+          name: ziti-tunnel
+          args: ["tproxy"]
+          env:
+            - name: ZITI_IDENTITY_BASENAME
+              value: sidecar-client  # the filename in the volume is sidecar-client.json
+          volumeMounts:
+            - name: sidecar-client-identity
+              mountPath: /netfoundry
+              readOnly: true
+          securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+      dnsPolicy: None
+      dnsConfig:
+        nameservers:
+          - 127.0.0.1   # used by the tunneler during startup to verify own DNS for the pod
+          - 10.96.0.10  # change to CoreDNS cluster service address
+      restartPolicy: Always
+      volumes:
+        - name: sidecar-client-identity
+          secret:
+            secretName: sidecar-client-identity

@@ -1,0 +1,28 @@
+ziti-controller:
+  clientApi:
+    advertisedHost: "controller.openziti.runs.onstackit.cloud"
+    advertisedPort: 443
+    service:
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: "controller.openziti.runs.onstackit.cloud"
+  cert-manager:
+    enabled: true
+  trust-manager:
+    enabled: true
+    app:
+      trust:
+        namespace: "ziti-controller"
+
+ziti-router:
+  # this is required as helm upgrade fails with the job waiting for the pvc
+  persistence:
+    existingClaim: "ziti-controller-router"
+  enrollmentJwt: ""
+  edge:
+    advertisedHost: "router1.openziti.runs.onstackit.cloud"
+    service:
+      type: "LoadBalancer"
+      annotations:
+        external-dns.alpha.kubernetes.io/hostname: "router1.openziti.runs.onstackit.cloud"
+  ctrl:
+    endpoint: "controller.openziti.runs.onstackit.cloud:443"
